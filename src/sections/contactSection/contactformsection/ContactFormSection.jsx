@@ -3,7 +3,7 @@ import React, { use, useState } from 'react'
 import styles from './contactform.module.css'
 import 'react-phone-input-2/lib/style.css'
 import PhoneInput from 'react-phone-input-2'
-import contactimg from '../../../assets/contact/contactform.png'
+import contactimg from '@/assets/contact/contactform.png'
 const ContactFormSection = () => {
     const [formdata, setFormData] = useState({
         email: "",
