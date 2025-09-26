@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './CoursesImageSection.module.css'
-import course from '../../../assets/courses/img.png'
+import course from '@/assets/courses/img.png'
 
 const CoursesImageSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./StudentSection.module.css";
-import man from "../../../assets/courses/man.png";
-import colon from "../../../assets/courses/colon.png";
+import man from "@/assets/courses/man.png";
+import colon from "@/assets/courses/colon.png";
 
 const StudentSection = () => {
   const icons = [
