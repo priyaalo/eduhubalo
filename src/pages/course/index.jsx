@@ -3,7 +3,7 @@ import Head from 'next/head'
 import CoursesHeroSection from '@/sections/CoursesSection/coursehero/CoursesHeroSection'
 import CoursesImageSection from '@/sections/CoursesSection/imagesection/CoursesImageSection'
 import CoursesCardSection from '@/sections/CoursesSection/cardsection/CoursesCardSection'
-import StudentSection from '@/sections/CoursesSection/studentsection/studentsection'
+import StudentSection from '@/sections/CoursesSection/studentsection/StudentSection'
 import CoursesQnSection from '@/sections/CoursesSection/qnsection/CoursesQnSection'
 
 
