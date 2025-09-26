@@ -1,0 +1,113 @@
+.mainhead {
+  text-align: center;
+  font-size: 43px;
+  padding-bottom: 20px;
+  color: #505050;
+  font-weight: 400;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #505050;
+  font-weight: 300;
+}
+
+.contactform {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+.contactform > div {
+  width: 48%;
+}
+.label label {
+  color: #4e4e4e;
+  font-size: 14px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+.formdiv {
+  margin: 0px 0px 20px 0px;
+}
+
+.input input,
+.input textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+}
+
+.input input:focus,
+.input textarea:focus {
+  border-color: black;
+}
+
+.contactimg img {
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.contactimg {
+  height: 365px;
+}
+.contactwhole {
+  padding: 50px 0px;
+}
+
+.submit {
+  width: 50px;
+  margin: auto;
+}
+
+.submit button {
+  background: linear-gradient(180deg, #4ca5d9 0%, #69bde6 100%);
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+.submit button:hover {
+  background: #56c6dc;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .contactform {
+    flex-direction: column-reverse;
+    gap:30px;
+  }
+  .contactimg {
+    height: max-content;
+  }
+  .contactform > div {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+      .mainhead {
+  font-size: 17px;
+ 
+}
+.subhead {
+  font-size: 12px;
+}
+}
+
+@media (max-width: 320px) {
+}

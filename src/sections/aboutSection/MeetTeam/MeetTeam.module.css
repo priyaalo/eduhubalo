@@ -1,0 +1,141 @@
+
+.MeetTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.teamContainer {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding-top: 50px;
+}
+
+.imageWrapper {
+    position: relative;
+    top: 30px;
+    width: 258px;
+    height: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.teamMember:nth-child(1) .imageWrapper {
+    background-color: #e6ffe6;
+}
+
+.teamMember:nth-child(2) .imageWrapper {
+    background-color: #e0e0ff;
+}
+
+.imageWrapper img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 377px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.teamMember h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    padding-top: 10px;
+}
+
+.teamMember .title {
+    font-size: 1rem;
+    color: #777;
+}
+
+.teamMember a {
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.teamMember a:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .heading h2 {
+        font-size: 2rem;
+    }
+    .heading p {
+        font-size: 1rem;
+    }
+    .teamContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .teamMember {
+        width: 100%;
+        max-width: 300px;
+    }
+    .imageWrapper {
+        width: 220px;
+        height: 240px;
+    }
+    .imageWrapper img {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .heading h2 {
+        font-size: 1.6rem;
+    }
+    .heading p {
+        font-size: 0.9rem;
+    }
+    .imageWrapper {
+        width: 180px;
+        height: 200px;
+    }
+    .imageWrapper img {
+        height: 250px;
+    }
+    .teamMember h3 {
+        font-size: 0.9rem;
+    }
+    .teamMember .title {
+        font-size: 0.85rem;
+    }
+}

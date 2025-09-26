@@ -1,0 +1,128 @@
+.valueSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f5f7fa;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.circleWrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+/* Round rotating background */
+.roundImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  animation: rotate 30s linear infinite;
+  z-index: 0;
+}
+
+.roundImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Center Logo */
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Generic icon style */
+.icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Outer Circle (3 icons: top, bottom-left, bottom-right) */
+.icon1 { top: 50%; left: 50%; transform: rotate(270deg) translate(220px) rotate(-270deg); }
+.icon2 { top: 50%; left: 50%; transform: rotate(150deg) translate(220px) rotate(-150deg); }
+.icon3 { top: 50%; left: 50%; transform: rotate(30deg) translate(220px) rotate(-30deg); }
+
+/* Inner Circle (6 icons: top, middle-left (2), middle-right (2), bottom) */
+.icon4 { top: 50%; left: 50%; transform: rotate(270deg) translate(140px) rotate(-270deg); }
+.icon5 { top: 50%; left: 50%; transform: rotate(210deg) translate(140px) rotate(-210deg); }
+.icon6 { top: 50%; left: 50%; transform: rotate(150deg) translate(140px) rotate(-150deg); }
+.icon7 { top: 50%; left: 50%; transform: rotate(30deg) translate(140px) rotate(-30deg); }
+.icon8 { top: 50%; left: 50%; transform: rotate(330deg) translate(140px) rotate(-330deg); }
+.icon9 { top: 50%; left: 50%; transform: rotate(90deg) translate(140px) rotate(-90deg); }
+
+/* Rotation animation */
+@keyframes rotate {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circleWrapper { width: 350px; height: 350px; }
+  .icon { width: 60px; height: 60px; }
+  .logo { width: 120px; height: 120px; }
+  .icon1 { transform: rotate(270deg) translate(155px) rotate(-270deg); }
+  .icon2 { transform: rotate(150deg) translate(155px) rotate(-150deg); }
+  .icon3 { transform: rotate(30deg) translate(155px) rotate(-30deg); }
+  .icon4 { transform: rotate(270deg) translate(100px) rotate(-270deg); }
+  .icon5 { transform: rotate(210deg) translate(100px) rotate(-210deg); }
+  .icon6 { transform: rotate(150deg) translate(100px) rotate(-150deg); }
+  .icon7 { transform: rotate(30deg) translate(100px) rotate(-30deg); }
+  .icon8 { transform: rotate(330deg) translate(100px) rotate(-330deg); }
+  .icon9 { transform: rotate(90deg) translate(100px) rotate(-90deg); }
+}
+
+@media (max-width: 480px) {
+  .circleWrapper { width: 280px; height: 280px; }
+  .icon { width: 50px; height: 50px; }
+  .logo { width: 100px; height: 100px; }
+  .icon1 { transform: rotate(270deg) translate(125px) rotate(-270deg); }
+  .icon2 { transform: rotate(150deg) translate(125px) rotate(-150deg); }
+  .icon3 { transform: rotate(30deg) translate(125px) rotate(-30deg); }
+  .icon4 { transform: rotate(270deg) translate(80px) rotate(-270deg); }
+  .icon5 { transform: rotate(210deg) translate(80px) rotate(-210deg); }
+  .icon6 { transform: rotate(150deg) translate(80px) rotate(-150deg); }
+  .icon7 { transform: rotate(30deg) translate(80px) rotate(-30deg); }
+  .icon8 { transform: rotate(330deg) translate(80px) rotate(-330deg); }
+  .icon9 { transform: rotate(90deg) translate(80px) rotate(-90deg); }
+}

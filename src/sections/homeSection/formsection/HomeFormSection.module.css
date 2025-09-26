@@ -1,0 +1,173 @@
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}
+.homeform {
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto;   
+  padding: 20px;    
+}
+
+.form label {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4E4E4E;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.in {
+  padding-bottom: 30px;
+}
+
+.form input,
+.phoneInput1 input,
+.form select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form input:focus,
+.form select:focus,
+.phoneInput1 input:focus {
+  border-color: black;
+}
+
+.phoneInput1 {
+  padding-bottom: 30px;
+}
+
+.phoneInput1 input {
+  border-radius: 6px;
+  padding-left: 45px; 
+  border: 1px solid black;
+  height: 50px; /* match other inputs */
+}
+
+.buttonn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.btn {
+  background: linear-gradient(180deg, #4CA5D9 0%, #69BDE6 100%);
+  color: white;
+  padding: 12px 20px; /* original size */
+  font-size: 15px;    /* original size */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #509bdd;
+}
+
+
+
+@media (max-width: 1024px) {
+  .homeform {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeform {
+    padding: 10px;
+  }
+  .container{
+    padding-bottom: 20%;
+  }
+  .form{
+    width:95%;
+    padding-left: 20px;
+  }
+
+  .buttonn {
+    width: 100%;
+    padding: 0; 
+  }
+
+  .btn {
+    width: auto; 
+    padding: 12px 20px; 
+    font-size: 15px;    
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .form label {
+    font-size: 13px;
+  }
+
+  .form input,
+  .phoneInput1 input,
+  .form select {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .buttonn {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .btn {
+    width: auto; 
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .form label {
+    font-size: 12px;
+  }
+
+  .form input,
+  .phoneInput1 input,
+  .form select {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .btn {
+    width: auto; 
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}

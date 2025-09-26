@@ -1,0 +1,156 @@
+.MeetTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.img {
+    border-radius: 15px;
+    background-color: #F9FDFF;
+    padding-bottom: 10px;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.marqueeContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marqueeContent {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    gap: 0;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    padding: 10px;
+}
+
+.marqueeContainer:hover .marqueeContent {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.imageWrapper {
+    position: relative;
+    width: 258px;
+    height: 280px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 15px;
+}
+
+.infoWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.infoWrapper span {
+    font-weight: 600;
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .heading h2 {
+        font-size: 2rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+
+    .teamMember {
+        min-width: 220px;
+    }
+
+    .imageWrapper {
+        width: 200px;
+        height: 220px;
+    }
+
+    .infoWrapper {
+        padding: 0 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .heading p {
+        font-size: 0.9rem;
+    }
+
+    .teamMember {
+        min-width: 180px;
+        padding: 5px;
+    }
+
+    .imageWrapper {
+        width: 160px;
+        height: 180px;
+    }
+
+    .infoWrapper {
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .infoWrapper span {
+        font-size: 0.9rem;
+    }
+}

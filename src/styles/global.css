@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+img {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+    draggable: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.react-tel-input .flag-dropdown {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    background: none !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.react-tel-input .form-control {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .01rem;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+    padding-left: 40px !important;
+    margin-left: 0px !important;
+    border-radius: 5px !important;
+    background: #FFFFFF;
+    border: none !important;
+    height: 50px !important;
+
+}
+
+.react-tel-input {
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+}
+
+.react-tel-input .form-control:focus {
+    border: 1px solid black !important;
+    width: 100% !important;
+    padding-left: 40px !important;
+    margin-left: 0px !important;
+    border-radius: 5px !important;
+    
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+    background: none !important;
+    border-radius: 0px !important;
+}
+
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus {
+    background: none !important;
+}

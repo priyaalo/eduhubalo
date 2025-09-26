@@ -1,0 +1,257 @@
+
+.seventh {
+  background-color: #EFFBFF;
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+/* .homePageCarousal{
+  width:100%;
+} */
+
+.bottom {
+  display: flex;
+  gap: 25px;
+  flex-wrap: nowrap;   
+  animation: HomeScroll 30s linear infinite;
+}
+
+
+.top {
+  color: #2B2B2B;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+.image2 {
+  max-width: 150px;   
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
+.top h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.top p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* .homePageCarousalContainer {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 25px 0px;
+  animation: HomeScroll 10s linear infinite;
+} */
+
+.homePageCarousalSplit {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+ 
+  width:400px;
+  gap: 10px;
+
+ 
+  
+}
+
+
+/* @keyframes HomeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-224px * 24));
+  }
+} */
+
+
+
+
+.homePageCarousalSplitDivs {
+  flex: 0 0 auto;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;        
+  flex-direction: column;
+  padding: 0;              
+}
+/* 
+.imageContainer {
+  width: 350px;
+  height: 250px;          
+  overflow: hidden;
+} */
+
+.alumniImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        
+  display: block;
+  margin: 0;               
+}
+
+.cardContent {
+  padding: 1rem;           
+}
+.imageContainer {
+  height: 480px;
+  width:350px;
+  overflow: hidden;
+}
+
+.alumniImage {
+  width: 100%;
+  height: 100%;
+
+}
+
+.cardContent {
+  padding: 1.2rem;
+}
+
+.nameRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.nameRow h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+}
+
+.careerGap {
+  color: #6BA4ED;
+  font-size: 0.9rem; 
+  text-align: left;
+}
+
+.role {
+  color: #6BA4ED;
+  font-size: 0.9rem;
+  padding-top: 20px;
+  text-align: left;
+}
+.image2{
+  height:1%;
+  width:1%;
+}
+.homePageCarousal {
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  gap:40px;
+  animation: scrollLoop 5s linear infinite;
+  
+}
+
+.homePageCarousalSplit {
+  min-width: 350px; 
+  margin-right: 0;
+  
+  background-color: white;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+   
+    transform: translateX(-224px);
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .bottom {
+    gap: 1.5rem;
+  }
+  .card{
+    width:100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .seventh {
+    padding: 4rem 1.5rem;
+  }
+  
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seventh {
+    padding: 3rem 1rem;
+  }
+  
+  .top h2 {
+    font-size: 1.8rem;
+  }
+  
+.card {
+    width: 95%;      
+    max-width: 300px;
+  }
+
+  
+  .top p {
+    font-size: 1rem;
+  }
+  
+  .enrollButton {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .seventh {
+    padding: 3rem 1rem;
+  }
+  .card {
+    width: 95%;        
+  }
+  
+  .top h2 {
+    font-size: 1.8rem;
+  }
+  
+  .top p {
+    font-size: 1rem;
+  }
+  
+  .enrollButton {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}

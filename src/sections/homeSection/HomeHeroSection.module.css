@@ -1,0 +1,676 @@
+.hero {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh; /* Uses dynamic viewport height for mobile */
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/hero/herobg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: poppins;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+/* LEFT TEXT CONTENT */
+.left {
+  flex: 1;
+  color: white;
+  max-width: 700px;
+  padding-top: 90px;
+}
+
+.left h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem); /* Responsive font size */
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 20px;
+  font-family: poppins;
+}
+
+.left p {
+  font-size: clamp(1rem, 2vw, 1.4rem); /* Responsive font size */
+  font-family: poppins;
+  color: #dce3e9;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.click {
+  display: flex;
+  gap: 30px;
+  padding: 40px 0px;
+  flex-wrap: wrap;
+}
+
+.enroll1 {
+  background: white;
+  color: #69BDE6;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: none;
+  min-width: 150px;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  white-space: nowrap;
+}
+
+.enroll1:hover {
+  background: linear-gradient(105.87deg, rgba(255, 255, 255, 0.6) 3.04%, rgba(255, 255, 255, 0.2) 96.05%);
+  color: white;
+}
+
+.course {
+  background: linear-gradient(105.87deg, rgba(255, 255, 255, 0.6) 3.04%, rgba(255, 255, 255, 0.2) 96.05%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  min-width: 200px;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  white-space: nowrap;
+}
+
+.course:hover {
+  background-color: white;
+  color: #69BDE6;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  background-color: white;
+  padding: 7px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+.bar {
+  padding-top: 30px;
+}
+
+.search_input {
+  border: none;
+  outline: none;
+  opacity: 0;
+  font-size: 14px;
+  color: #3b82f6;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.search_button {
+  background-color: white;
+  color: #3b82f6;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.searchbar:hover .search_input {
+  width: 210px;
+  opacity: 1;
+  padding: 6px 10px;
+}
+
+.search_input:focus {
+  width: 160px;
+  opacity: 1;
+  padding: 4px 45px;
+}
+
+/* RIGHT SIDE */
+
+.right {
+  position: relative;
+  width: 580px;
+  height: 550px;
+  padding-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 110px;
+}
+
+.plane {
+  position: absolute;
+  width: 39%;
+  height: 39%;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.bigcircle {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation:rotateMe 20s linear infinite;
+  
+}
+
+@keyframes rotateMe {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 4;
+}
+
+.man {
+  position: absolute;
+  z-index: 2;
+  width: 63%;
+  height: auto;
+  top: 62%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.imgg1,
+.imgg2,
+.imgg3,
+.imgg4,
+.imgg5,
+.imgg6,
+.imgg7,
+.imgg8 {
+  position: absolute;
+  z-index: 4;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgg1 {
+  /*angular*/
+  bottom: 94%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imgg8 {
+  /*arrow*/
+  top: 15%;
+  right: 18%;
+  transform: translateY(-50%);
+}
+
+.imgg6 {
+  /*tally*/
+  bottom: 1%;
+  right: 18%;
+  transform: translateY(-50%);
+}
+
+.imgg7 {
+  /*python*/
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imgg4 {
+  /*v*/
+  bottom: 1%;
+  left: 18%;
+  transform: translateY(-50%);
+}
+
+.imgg2 {
+  /*java*/
+  top: 15%;
+  left: 18%;
+  transform: translateY(-50%);
+}
+
+.imgg5 {
+  /*react*/
+  top: 53%;
+  left: 86%;
+  transform: translateY(-50%);
+}
+
+.imgg3 {
+  /*figma*/
+  top: 53%;
+  right: 85%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+  .section {
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .left {
+    padding-top: 40px;
+    max-width: 500px;
+  }
+  
+  .left h2 {
+    font-size: 33px;
+  }
+  
+  .left p {
+    font-size:17px;
+  }
+  
+  .right {
+    width: 450px;
+    height: 450px;
+    padding-top: 60px;
+  }
+  
+  .imgg1,
+  .imgg2,
+  .imgg3,
+  .imgg4,
+  .imgg5,
+  .imgg6,
+  .imgg7,
+  .imgg8 {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .man {
+    width: 69%;
+    top: 61%;
+    left: 62%;
+  }
+}
+
+@media (max-width: 1024px) {
+ 
+  .left {
+    max-width: 500px;
+  }
+  
+  .left h2 {
+    font-size: 29px;
+  }
+  
+  .left p {
+    font-size: 16px;
+  }
+  .click{
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+  }
+  
+  .enroll1 {
+    min-width: 90px;
+    font-size:16px;
+    padding: 9px 15px;
+  }
+   .course {
+    min-width: 140px;
+    font-size: 16px;
+    padding: 9px 15px;
+  }
+  
+  .right {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .searchbar {
+    padding: 5 9px;
+  }
+  
+
+  
+}
+
+@media (max-width: 900px) {
+  .section {
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .left {
+    padding-top: 20px;
+  }
+  .left h2{
+    font-size: 26px;
+  }
+  .left p{
+    font-size:13px;
+  }
+  .click {
+    align-items: center;
+  }
+  .enroll1{
+    width:10px;
+    font-size: 13px;
+    padding: 9px 15px;
+  }
+  .course{
+    
+    width:340px;
+    font-size: 13px;
+  }
+  
+  .right {
+    width: 360px;
+    height: 380px;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  
+  .animation {
+    padding-top: 0;
+  }
+  
+  .man {
+    width: 78%;
+    top: 50%;
+    left: 62%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column; 
+    text-align: center;
+
+    padding-top: 100px;
+  }
+  .left {
+    max-width: 90%;
+    padding-top: 20px;
+  }
+  .left h2 {
+    font-size: 45px;  
+  }
+  .left p {
+    font-size: 22px;
+
+  }
+  .click {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .course {
+   
+    font-size: 20px;
+    order: 1;
+    
+    padding: 10px 40px;
+  }
+  .enroll1 {
+    font-size: 19px;
+    order: 2;
+    width:max-content;
+  padding: 10px 20px;
+
+  }
+  .right {
+    width: 350px;
+    height: 350px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .man {
+    width: 73%;
+    top: 50%;
+    left: 63%;
+  }
+  .imgg1, .imgg2, .imgg3, .imgg4, .imgg5, .imgg6, .imgg7, .imgg8 {
+    width: 35px;
+    height: 35px;
+  }
+  .searchbar {
+    display: none;
+  }
+  
+.imgg1 {
+  /*angular*/
+  bottom: 94%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imgg8 {
+  /*arrow*/
+  top: 15%;
+  right: 14%;
+  transform: translateY(-50%);
+}
+
+.imgg6 {
+  /*tally*/
+  bottom: 1%;
+  right: 14%;
+  transform: translateY(-50%);
+}
+
+.imgg7 {
+  /*python*/
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imgg4 {
+  /*v*/
+  bottom: 1%;
+  left: 14%;
+  transform: translateY(-50%);
+}
+
+.imgg2 {
+  /*java*/
+  top: 16%;
+  left: 13%;
+  transform: translateY(-50%);
+}
+
+.imgg5 {
+  /*react*/
+  top: 53%;
+  left: 89%;
+  transform: translateY(-50%);
+}
+
+.imgg3 {
+  /*figma*/
+  top: 53%;
+  right: 89%;
+  transform: translateY(-50%);
+}
+}
+
+
+@media (max-width: 480px) {
+  .section{
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .left h2 {
+    font-size: 23px; 
+    max-width:100%;
+  }
+  .left p {
+    font-size: 10px; 
+    padding-bottom: 20px;
+   
+  }
+  .click {
+    gap: 19px;
+    padding: 10px 0;
+  }
+  .course {
+    width: 50%; 
+    font-size: 10px;
+    padding: 12px 0;
+  }
+  .enroll1 {
+    width: 25%; 
+    font-size: 10px;
+    padding: 12px 0;
+  }
+  .right {
+    width: 300px;
+    height: 300px;
+  }
+  .imgg1, .imgg2, .imgg3, .imgg4, .imgg5, .imgg6, .imgg7, .imgg8 {
+    width: 30px;
+    height: 30px;
+  }
+  .man {
+    width: 73%;
+    top:49%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+  }
+  .searchbar {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .section{
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .left h2 {
+    font-size: 10px; 
+    
+
+  }
+  .left p {
+    font-size: 10px; 
+    padding-bottom: 20px;
+   
+  }
+  .click {
+    gap: 19px;
+    padding: 10px 0;
+  }
+  .course {
+    width: 50%; 
+    font-size: 10px;
+    padding: 12px 0;
+  }
+  .enroll1 {
+    width: 25%; 
+    font-size: 10px;
+    padding: 12px 0;
+  }
+  .right {
+    width: 300px;
+    height: 300px;
+  }
+  .imgg1, .imgg2, .imgg3, .imgg4, .imgg5, .imgg6, .imgg7, .imgg8 {
+    width: 30px;
+    height: 30px;
+  }
+  .man {
+    width: 73%;
+    top:49%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+  }
+  .searchbar {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .section{
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .left h2 {
+    font-size: 16px; 
+  }
+  .left p {
+    font-size: 8px; 
+    padding-bottom: 20px;
+   
+  }
+  .click {
+    gap: 19px;
+    padding: 10px 0;
+  }
+  .course {
+    width: 60%; 
+    font-size: 8px;
+    padding: 12px 5px;
+  }
+  .enroll1 {
+    width: 25%; 
+    font-size: 8px;
+    padding: 12px 0;
+  }
+  .right {
+    width: 300px;
+    height: 300px;
+  }
+  .imgg1, .imgg2, .imgg3, .imgg4, .imgg5, .imgg6, .imgg7, .imgg8 {
+    width: 30px;
+    height: 30px;
+  }
+  .man {
+    width: 73%;
+    top:49%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+  }
+  .searchbar {
+    display: none;
+  }
+}

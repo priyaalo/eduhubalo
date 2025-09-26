@@ -1,0 +1,169 @@
+.heroSection {
+  background: linear-gradient(135deg, #4CA5D9, #69BDE6);
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  padding: 10rem 12rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+.heroContent {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 70%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  box-shadow: 0px 8px 20px rgba(146, 165, 218, 0.15);
+  gap: 1rem;
+  overflow: hidden;
+}
+
+
+.heroContent::before,
+.heroContent::after,
+.heroContent span.bottomBorder,
+.heroContent span.leftBorder {
+  background: rgba(255,255,255,0.7);
+}
+
+.heroContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  animation: moveTop 10s linear infinite;
+}
+.heroContent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  animation: moveRight 10s linear infinite;
+}
+.heroContent span.bottomBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  animation: moveBottom 10s linear infinite;
+}
+.heroContent span.leftBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  animation: moveLeft 10s linear infinite;
+}
+
+
+@keyframes moveTop { 0%{transform:translateX(-100%)}50%{transform:translateX(0)}100%{transform:translateX(100%)} }
+@keyframes moveRight { 0%{transform:translateY(-100%)}50%{transform:translateY(0)}100%{transform:translateY(100%)} }
+@keyframes moveBottom { 0%{transform:translateX(100%)}50%{transform:translateX(0)}100%{transform:translateX(-100%)} }
+@keyframes moveLeft { 0%{transform:translateY(100%)}50%{transform:translateY(0)}100%{transform:translateY(-100%)} }
+
+
+.heroTitle {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.heroText {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.iconWrapper, .downArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: background 0.3s;
+  color:white;
+}
+.iconWrapper:hover { background-color: white; }
+.downArrow {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  width: clamp(35px, 5vw, 50px);
+  height: clamp(35px, 5vw, 50px);
+  margin: 1rem auto 0 auto;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce { 0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(8px)}60%{transform:translateY(4px)} }
+
+
+@media (max-width: 1024px) {
+  .heroSection {
+    padding: 6rem 3rem;
+    min-height: 60vh;
+    align-items: center;
+  }
+  .heroContent {
+    max-width: 80%;
+    padding: 1.5rem 1.5rem;
+    min-height: 280px;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 1rem;
+    min-height: 55vh;
+    align-items: center;
+  }
+  .heroContent {
+    max-width: 90%;
+    padding: 1.2rem 1rem;
+    min-height: 250px;
+    gap: 0.6rem;
+  }
+  .heroTitle { font-size: 1.2rem; }
+  .heroText { font-size: 0.5rem; }
+}
+
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding:0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    margin-top:20px;
+  }
+  .heroContent {
+    max-width: 95%;
+    min-height: 220px;
+    padding: 1rem;
+  }
+  .heroTitle { font-size: 1.2rem; }
+  .heroText { font-size: 0.7rem; }
+}

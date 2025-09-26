@@ -1,0 +1,121 @@
+
+.WhyUsSection {
+    background-color: #EFFBFF; 
+    font-family: Arial, sans-serif;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.ContentWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.HeadingContainer {
+    margin-bottom: 50px;
+}
+
+.Heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Subheading {
+    font-size: 20px;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.CardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.Card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.Card:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+}
+
+.Card:nth-child(2) {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+.Card:nth-child(3) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+}
+
+.Card:nth-child(4) {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+.Card:hover {
+    transform: translateY(-10px); 
+    background-color: #95c5f8;
+    
+}
+
+
+.Card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #4CA5D9, #69BDE6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #007bff; 
+    margin-bottom: 10px;
+}
+
+.Card h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    
+   
+}
+
+@media screen and (max-width: 992px) {
+    .Card {
+        flex: 1 1 45%; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Card {
+        flex: 1 1 100%; 
+        border-radius: 10px !important;
+    }
+}

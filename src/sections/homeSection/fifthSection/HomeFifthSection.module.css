@@ -1,0 +1,169 @@
+.fifth{
+    background-color: #EFFBFF;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+.top h1  {
+  font-size: 46px;
+  padding-bottom: 20px;
+  font-weight: 200;
+  color: #1a1a1a;
+}
+.card1 img{
+    width:100%;
+    height:auto;
+}
+.top p{
+    font-size: 24px;
+    padding-bottom: 3%;
+}
+.card{
+    width:100%;
+    display:flex;
+    gap:45px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card1{
+    width:20%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}.card1 h3{
+    font-weight:100;
+    padding: 0px 15px;
+    text-align: left;
+    padding-top: 5px;
+}
+.card1 p{
+    font-size: 10px;
+    color:#6C6C6C;
+    text-align: left;
+
+    padding-left: 15px;
+    padding-bottom: 15px;
+}.button {
+  padding-top: 7%;
+}
+.more {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  color: #69BDE6;
+  border-radius: 7px;
+  border: 1px solid #69BDE6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.more:hover {
+  background-color: #8BC9E9;
+  color: white;
+}
+
+@media(max-width:1200px){
+    .top h1{
+        font-size: 33px;
+    }
+    .top p{
+        font-size: 17px;
+    }
+    .card1 h3{
+        font-size: 11px;
+    }
+    .card1 p{
+        font-size: 7px;
+    }
+}
+@media(max-width:900px){
+   .top h1{
+        font-size: 29px;
+    }
+    .top p{
+        font-size: 15px;
+    }
+    .card1 h3{
+        font-size: 11px;
+    }
+    .card1 p{
+        font-size: 7px;
+    }  
+}
+@media(max-width:768px){
+  
+  
+     .top h1{
+        font-size: 35px;
+    }
+    .top p{
+        font-size: 16px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .card1{
+        width:70%;
+    }
+    .card1 h3{
+        font-size: 24px;
+    }
+    .card1 p{
+        font-size: 17px;
+    }
+
+}
+@media(max-width:480px){
+  
+  
+     .top h1{
+        font-size: 30px;
+    }
+    .top p{
+        font-size: 16px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .card1{
+        width:70%;
+    }
+    .card1 h3{
+        font-size: 18px;
+    }
+    .card1 p{
+        font-size: 12px;
+    }
+}
+@media(max-width:320px){
+  
+  
+     .top h1{
+        font-size: 20px;
+    }
+    .top p{
+        font-size: 16px;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .card1{
+        width:70%;
+    }
+    .card1 h3{
+        font-size: 14px;
+    }
+    .card1 p{
+        font-size: 11px;
+    }
+}
