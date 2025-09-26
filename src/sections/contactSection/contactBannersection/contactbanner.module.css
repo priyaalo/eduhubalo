@@ -1,5 +1,5 @@
 .heroSection {
-    background-image:url('@/assets/hero/herobg.png') ;
+    background-image:url('../../../assets/hero/herobg.png') ;
   min-height: 70vh;
   display: flex;
   justify-content: center;
