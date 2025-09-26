@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from "./Footer.module.css"
-import alo from '../../assets/footer/alohub.png'
+import alo from '@/assets/footer/alohub.png'
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";

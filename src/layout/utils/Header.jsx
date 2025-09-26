@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from "./Header.module.css";
-import image from '../../assets/header/logo.png';
-import im5 from '../../assets/header/ham.png';
-import im6 from '../../assets/header/down.png';
+import image from '@/assets/header/logo.png';
+import im5 from '@/assets/header/ham.png';
+import im6 from '@/assets/header/down.png';
 import { usePathname } from 'next/navigation';
-import imgg from '../../assets/header/arr.png'
+import imgg from '@/assets/header/arr.png'
 import Link from 'next/link';
 
 
