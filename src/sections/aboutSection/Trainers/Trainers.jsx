@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./Trainers.module.css";
 
-import TrainerImage from "@/assets/about/trainer.png";
+import TrainerImage from "@/assets/about/Trainer.png";
 import logoimg from "@/assets/about/alo_logo.png";
 
 
