@@ -25,7 +25,7 @@ export const ChiefSection = () => {
     <section className={styles.ChiefSection} ref={sectionRef}>
       <div className={styles.content}>
         <h2>
-         The Vision Behind ALO Educational<br/> Hub's
+         The Vision Behind ALO Educational<br/> Hub&apos;s
 Success
         </h2>
       </div>
