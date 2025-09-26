@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './HomeFifthSection.module.css'
-import green from '../../../assets/hero/green.png'
-import orange from '../../../assets/hero/orange.png'
-import blue from '../../../assets/hero/blue.png'
-import purple from '../../../assets/hero/purple.png'
+import green from '@/assets/hero/green.png'
+import orange from '@/assets/hero/orange.png'
+import blue from '@/assets/hero/blue.png'
+import purple from '@/assets/hero/purple.png'
 const HomeFifthSection = () => {
   return (
     <div className={styles.fifth}>

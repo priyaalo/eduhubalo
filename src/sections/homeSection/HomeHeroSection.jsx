@@ -2,18 +2,18 @@
 import React from 'react'
 import { useState } from "react";
 import styles from './HomeHeroSection.module.css';
-import img1 from '../../assets/hero/elipse.png'
-import img2 from '../../assets/hero/man.png'
-import img3 from '../../assets/hero/plane.png'
-import img4 from '../../assets/hero/search.png'
-import img5 from '../../assets/hero/angular.png'
-import img6 from '../../assets/hero/java.png'
-import img12 from '../../assets/hero/arrow.png'
-import img8 from '../../assets/hero/v.png'
-import img7 from '../../assets/hero/figma.png'
-import img11 from '../../assets/hero/python.png'
-import img10 from '../../assets/hero/tally.png'
-import img9 from '../../assets/hero/react.png'
+import img1 from '@/assets/hero/elipse.png'
+import img2 from '@/assets/hero/man.png'
+import img3 from '@/assets/hero/plane.png'
+import img4 from '@/assets/hero/search.png'
+import img5 from '@/assets/hero/angular.png'
+import img6 from '@/assets/hero/java.png'
+import img12 from '@/assets/hero/arrow.png'
+import img8 from '@/assets/hero/v.png'
+import img7 from '@/assets/hero/figma.png'
+import img11 from '@/assets/hero/python.png'
+import img10 from '@/assets/hero/tally.png'
+import img9 from '@/assets/hero/react.png'
 
   
   const HomeHeroSection = () => {

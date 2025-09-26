@@ -2,13 +2,13 @@
 import React from "react";
 import styles from "./HomeSixthSection.module.css";
 
-import img1 from "../../../assets/hero/well.png";
-import img2 from "../../../assets/hero/flipkart.png";
-import img3 from "../../../assets/hero/tcs.png";
-import img4 from "../../../assets/hero/cognizant.png";
-import img5 from "../../../assets/hero/amazon.png";
-import img6 from "../../../assets/hero/zoho.png";
-import img7 from "../../../assets/hero/infosys.png";
+import img1 from "@/assets/hero/well.png";
+import img2 from "@/assets/hero/flipkart.png";
+import img3 from "@/assets/hero/tcs.png";
+import img4 from "@/assets/hero/cognizant.png";
+import img5 from "@/assets/hero/amazon.png";
+import img6 from "@/assets/hero/zoho.png";
+import img7 from "@/assets/hero/infosys.png";
 
 const HomeSixthSection = () => {
   const images = [

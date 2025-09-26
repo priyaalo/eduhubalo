@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './HomeSecondSection.module.css';
-import img1 from '../../../assets/hero/course1.png'
-import img2 from '../../../assets/hero/course1.png'
+import img1 from '@/assets/hero/course1.png'
+import img2 from '@/assets/hero/course1.png'
 
 const HomeSecondSection = () => {
 

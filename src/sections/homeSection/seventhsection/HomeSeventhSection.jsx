@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './HomeSeventhSection.module.css';
-import girl1 from '../../../assets/hero/gg1.jpg';
-import boy1 from '../../../assets/hero/bb1.jpg';
-import girl2 from '../../../assets/hero/gg2.jpg';
-import alo from '../../../assets/hero/alo.png';
-import line from '../../../assets/hero/Line 3.png'
+import girl1 from '@/assets/hero/gg1.jpg';
+import boy1 from '@/assets/hero/bb1.jpg';
+import girl2 from '@/assets/hero/gg2.jpg';
+import alo from '@/assets/hero/alo.png';
+import line from '@/assets/hero/Line 3.png'
 
 
 const HomeSeventhSection = () => {

@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './HomeThirdSection.module.css'
-import image1 from '../../../assets/hero/img1.jpg'
-import image2 from '../../../assets/hero/img2.jpg'
-import image3 from '../../../assets/hero/img3.jpg'
-import image4 from '../../../assets/hero/img4.jpg'
-import image5 from '../../../assets/hero/img5.png'
-import image6 from '../../../assets/hero/img6.jpg'
-import image7 from '../../../assets/hero/g1.png'
-import image8 from '../../../assets/hero/b1.png'
-import image9 from '../../../assets/hero/b2.png'
+import image1 from '@/assets/hero/img1.jpg'
+import image2 from '@/assets/hero/img2.jpg'
+import image3 from '@/assets/hero/img3.jpg'
+import image4 from '@/assets/hero/img4.jpg'
+import image5 from '@/assets/hero/img5.png'
+import image6 from '@/assets/hero/img6.jpg'
+import image7 from '@/assets/hero/g1.png'
+import image8 from '@/assets/hero/b1.png'
+import image9 from '@/assets/hero/b2.png'
 
 
 

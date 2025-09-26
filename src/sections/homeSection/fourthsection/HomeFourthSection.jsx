@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styles from './HomeFourthSection.module.css';
-import play from '../../../assets/hero/play.png';
+import play from '@/assets/hero/play.png';
 
 const HomeFourthSection = () => {
   const [playing, setPlaying] = useState(false);
