@@ -12,12 +12,10 @@ const CoursesHeroSection = () => {
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            Life Transitions of Our Students
+            Certification Course in UI/UX Design
           </h1>
           <p className={styles.heroText}>
-            We believe in the power of continuous self-improvement,<br />
-            offering innovative programs for digital readiness and
-            positive learning experiences.
+           Learn Photoshop, Illustrator, and Figma Skills while Mastering UI/UX Design to Create Stunning Visuals and Improve User Experiences Effectively. 
           </p>
   <span className={styles.bottomBorder}></span>
   <span className={styles.leftBorder}></span>

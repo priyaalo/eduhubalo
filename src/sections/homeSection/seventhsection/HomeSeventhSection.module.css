@@ -161,7 +161,8 @@
 .track {
   display: flex;
   gap:40px;
-  animation: scrollLoop 5s linear infinite;
+  animation: scrollLoop 20s linear infinite;
+  flex-wrap: nowrap;
   
 }
 
@@ -174,11 +175,11 @@
 
 @keyframes scrollLoop {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   100% {
    
-    transform: translateX(-224px);
+    transform: translateX(0%);
   }
 }
 

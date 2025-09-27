@@ -51,6 +51,9 @@
   color: #555;
   padding-bottom: 50px;
 }
+.subtitle :hover{
+  color:white;
+}
 
 .para {
   margin: 60px auto 0;
@@ -95,8 +98,17 @@
 
 .card:hover {
   border-radius: 10px 70px 10px 70px;
-  background-color: #69BDE6;
+  background-color:#69BDE6 ;
+  color:white;
+  
 }
+.card:hover p{
+  color:white;
+}
+.card:hover span{
+  color:white;
+}
+
 
 .number {
   display: inline-block;

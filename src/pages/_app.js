@@ -1,16 +1,15 @@
-import React from 'react'
-import { Fragment } from 'react'
-import '@/styles/global.css'
-import WebLayout from '@/layout/WebLayout'
+import React, { Fragment } from "react";
+import "@/styles/global.css";
+import WebLayout from "@/layout/WebLayout";
 
-const App = ({Component,pageProps}) => {
+const App = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <WebLayout>
         <Component {...pageProps} />
       </WebLayout>
     </Fragment>
-  )
-}
+  );
+};
 
-export default App
+export default App;

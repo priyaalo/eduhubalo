@@ -46,27 +46,4 @@ const HomeSixthSection = () => {
 
 export default HomeSixthSection;
 
-    // const images = [img1, img2, img3, img4, img5, img6, img7]
-    // const allImages = [...images, ...images];
-    // return (
-    //     <div className={styles.sixth}>
-    //         <div className={styles.header}>
-    //             <p>Where do our students work?</p>
-    //         </div>
-    //         <div className={styles.carousel}>
-    //             {allImages.map((src, index) => (
-    //                 <div key={index} className={styles.slide}>
-    //                     <img className={styles.carousel_image} src={src.src} alt="" />
-
-
-
-    //                 </div>
-    //             ))}
-
-               
-    //         </div>
-    //     </div>
-//     )
-// }
-
-
+  

@@ -34,6 +34,7 @@
   justify-content: space-between;
 }
 
+
 .leftarr {
   display: flex;
   align-items: center;
@@ -47,6 +48,7 @@
   width: 10px;
   height: 10px;
   object-fit: contain;
+  
 }
 
 
@@ -84,11 +86,12 @@
   background: white;
   flex-direction: column;
   padding: 10px 0;
-  min-width: 220px;
+  overflow: hidden;
+ 
 
   list-style: none;
   z-index: 101;
-  border-radius: 4px;
+  
  
 }
 
@@ -150,6 +153,7 @@
 .menu a img {
   height: 10px;
   width: 10px;
+
 }
 
 
@@ -211,43 +215,124 @@
   }
   .nav{
     padding: 0%;
-  border:none;
+    
+  }
+  .bar{
+    border-radius:0px;
   }
   .menu {
     display: none;
   }
-  .menuOpen {
-    display: block;
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 400px;
-    background: white;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
+
+.menuOpen {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto; 
+  background: white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+  
   .menuOpen ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
+    align-items: flex-start; 
+    gap: 0; 
+    padding: 0;
   }
+  
+  .menuOpen ul li {
+    width: 100%;
+  
+  }
+  
   .menuOpen ul li a {
     color: black;
     font-size: 16px;
     font-weight: 500;
-    text-align: center;
+    text-align: center; 
     display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 20px;
+    position: relative;
   }
+  
+  .menuOpen ul li a img {
+    display: inline-block !important; 
+    margin-left: 8px;
+  }
+
+ 
+  .menuOpen .dropdown {
+  display: block !important;  
+  position: static;
+  width: 100%;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuOpen .dropdown li {
+  display: block;              
+  width: 100%;
+  padding: 12px 20px 12px 30px;
+  border: 1px solid #eee;}
+
+  .menuOpen .leftarr img {
+    display: inline !important;
+
+  }
+  .hasSubmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hasSubmenu .leftarr {
+  margin-left: auto; 
+}
+
+
+.menuOpen .hasSubmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuOpen .hasSubmenu .leftarr {
+  margin-left: auto;
+}
+
+  .menuOpen .submenu {
+  display: block !important;   
+  position: static;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menuOpen .submenu li {
+  display: block;
+  width: 100%;
+  padding: 12px 20px 12px 30px; 
+  font-size: 13px;
+  border: 1px solid #f2f2f2;
+}
+
   .enroll {
     display: none;
   }
+  
   .hamburger {
     display: block;
   }

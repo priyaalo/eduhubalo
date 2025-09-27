@@ -22,11 +22,9 @@ const StudentSection = () => {
     <Fragment>
       <div className={styles.section}>
         <div className={styles.header}>
-          <h2>Our Students Says</h2>
+          <h2>Words From Our Students</h2>
           <p>
-            We believe in the power of continuous self-improvement, offering
-            innovative programs for digital readiness and positive learning
-            experiences.
+            Explore the experiences our students have gained at ALO Educational Hub.
           </p>
         </div>
 

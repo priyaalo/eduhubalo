@@ -24,8 +24,9 @@ const CoursesImageSection = () => {
         <div className={styles.content}>
           <h3>UI/UX Design</h3>
           <p>
-            Our vision is to redefine education with IT courses that <br/>inspire  creativity, critical thinking, and a passion for <br/>lifelong learning .Our vision is to redefine education <br/>with IT courses that inspire  creativity, critical thinking,<br/> and a passion for lifelong learning.
-          </p>
+           Our UI/UX designs course provides hands-on experience with Photoshop, Illustrator, and Figma, equipping you with the skills to tackle real-world design challenges and create impactful solutions.
+
+</p>
           <div className={styles.con}>
           <button className={styles.btn}>Download Brochure</button>
         </div></div>

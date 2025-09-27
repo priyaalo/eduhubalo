@@ -51,6 +51,22 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+.imageWrapper img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 377px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease-in-out; 
+}
+
+.imageWrapper:hover img {
+    transform: translateX(-50%) scale(1.1); 
+}
+
 
 .teamMember:nth-child(1) .imageWrapper {
     background-color: #e6ffe6;
