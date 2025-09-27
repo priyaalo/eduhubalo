@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ValueSection.module.css";
-import logoImage from "@/assets/hireTalent/Alohub.png";
+import logoImage from "@/assets/hireTalent/alohub.png";
 import roundImg from "@/assets/hireTalent/round.png";
 import mobileApp from "@/assets/hireTalent/mobileapp.png";
 import backend from "@/assets/hireTalent/backend.png";
