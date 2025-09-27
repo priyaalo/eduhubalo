@@ -6,7 +6,7 @@ import {ValueSection} from '@/sections/hireTalentSection/ValueSection/ValueSecti
 import WhySection from '@/sections/hireTalentSection/WhySection/WhySection'
 
 
-const hireTalent = () => {
+const HireTalent = () => {
   return (
     <Fragment>
       <Head>
@@ -22,4 +22,4 @@ const hireTalent = () => {
   )
 }
 
-export default hireTalent
+export default HireTalent

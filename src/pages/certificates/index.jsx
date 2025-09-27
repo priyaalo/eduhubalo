@@ -1,11 +1,11 @@
 import CertificateHeroSection from '@/sections/certificates/CertificateHeroSection'
 import React from 'react'
 
-const index = () => {
+const Certificate = () => {
     return (
         <>
             <CertificateHeroSection />
         </>
     )
 }
-export default index
+export default Certificate

@@ -4,7 +4,7 @@ import ContactFormSection from '@/sections/contactSection/contactformsection/Con
 import Head from 'next/head'
 import React from 'react'
 
-const index = () => {
+const Contact = () => {
   return (
     <>
       <Head>
@@ -17,4 +17,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Contact
