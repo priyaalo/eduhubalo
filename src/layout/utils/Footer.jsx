@@ -6,6 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
+import Link from 'next/link';
 
 const Footer = () => {
   const [email, setEmail] = useState("")
@@ -63,11 +64,11 @@ const Footer = () => {
             <div className={styles.links}>
               <p>Links</p>
               <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/course">Courses</a></li>
-                <li><a href="/hireTalent">Hire Talents</a></li>
-                <li><a href="/contactus">Contact Us</a></li>
+                <li><Link href="/home">Home</Link></li>
+                <li><Link href="/about">About Us</Link></li>
+                <li><Link href="/course">Courses</Link></li>
+                <li><Link href="/hireTalent">Hire Talents</Link></li>
+                <li><Link href="/contactus">Contact Us</Link></li>
               </ul>
             </div>
 
