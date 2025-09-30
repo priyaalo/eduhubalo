@@ -29,7 +29,7 @@ import img9 from '@/assets/hero/react.png'
       <div className={styles.section}>
       
           
-          {/* LEFT SIDE TEXT */}
+     
           <div className={styles.left}>
             <h2>Future-Ready Courses to Power Up Your Career</h2>
             <p>
@@ -92,7 +92,6 @@ import img9 from '@/assets/hero/react.png'
     
   </div>
 
-  {/* Person Image - Static */}
   <img src={img2.src} alt="Person" className={styles.man} />
 </div>
 </div></div>

@@ -1,4 +1,4 @@
-import React,{Fragment, useEffect} from 'react'
+import React,{Fragment} from 'react'
 import Head from 'next/head'
 import AboutHeroSection from '@/sections/aboutSection/HeroSection/AboutHeroSection'
 import VisionSection from '@/sections/aboutSection/VisionSection/VisionSection'
@@ -9,13 +9,7 @@ import  { TeamSection } from '@/sections/aboutSection/MeetTeam/MeetTeam'
 import { TrainerSection } from '@/sections/aboutSection/Trainers/Trainers'
 
 
-
 const About = () => {
-
-  
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
   return (
     <Fragment>
       

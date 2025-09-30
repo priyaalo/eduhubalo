@@ -161,7 +161,7 @@
 .section {
   background: #69bde6;
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 0px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -180,7 +180,7 @@
 }
 
 .homePageCarousal {
- 
+ overflow: hidden;
   width: 100%;
 }
 

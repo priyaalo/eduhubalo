@@ -4,11 +4,15 @@ import styles from './contactform.module.css'
 import 'react-phone-input-2/lib/style.css'
 import PhoneInput from 'react-phone-input-2'
 import contactimg from '@/assets/contact/contactform.png'
+import { postContactRequest } from '../../../../api/serviceapi'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const ContactFormSection = () => {
     const [formdata, setFormData] = useState({
         email: "",
-        message: "",
-        phonenumber: '',
+        comment: "",
+        mobileNo: '',
         name: ''
     })
 
@@ -34,13 +38,13 @@ const ContactFormSection = () => {
             newerrors.name = "Enter a valid name without numbers and special characters";
         }
 
-        if (!formdata.message.trim()) {
+        if (!formdata.comment.trim()) {
             newerrors.message = "Your message is required";
         }
 
-        if (!formdata.phonenumber.trim()) {
+        if (!formdata.mobileNo.trim()) {
             newerrors.phonenumber = "Phone number is required";
-        } else if (!/^\d{12}$/.test(formdata.phonenumber.trim())) {
+        } else if (!/^\d{12}$/.test(formdata.mobileNo.trim())) {
             newerrors.phonenumber = "Enter a valid 10-digit phone number";
         }
         setErrors(newerrors);
@@ -94,23 +98,35 @@ const ContactFormSection = () => {
 
         setErrors(prev => ({ ...prev, phonenumber: error }));
     };
-
+    const[loading,setLoading]=useState(false)
     const handleSubmit = async (e) => {
         e.preventDefault();
         const newErrors = validation();
         if (Object.keys(newErrors).length === 0) {
-            console.log("Form submitted");
-            setErrors({});
-            setFormData({
-                email: "",
-                message: "",
-                phonenumber: '',
-                name: ''
-            })
+            setLoading(true)
+            try {
+                const response = await postContactRequest(formdata);
+                console.log("Form submitted:", response.data, 'sdsd', formdata);
+                toast.success("Your message has been sent successfully.");
+                setErrors({});
+                setFormData({
+                    email: "",
+                    comment: "",
+                    mobileNo: '',
+                    name: ''
+                })
+
+            } catch (error) {
+                console.error(error);
+                toast.error("Failed to submit form. Please try again.");
+            }finally{
+                setLoading(false)
+            }
         }
     }
     return (
         <>
+            <ToastContainer />
             <div className={styles.contactwhole}>
                 <div className={styles.contacthead}>
                     <p className={styles.mainhead}>We are Always Delighted to Assist You</p>
@@ -134,9 +150,9 @@ const ContactFormSection = () => {
                             <div>
                                 <PhoneInput
                                     country='in'
-                                    value={formdata.phonenumber}
+                                    value={formdata.mobileNo}
                                     onChange={(phone) => {
-                                        setFormData({ ...formdata, phonenumber: phone });
+                                        setFormData({ ...formdata, mobileNo: phone });
                                         mobilevalidation(phone); // pass phone directly
                                     }}
                                 />
@@ -157,12 +173,12 @@ const ContactFormSection = () => {
                                 <label htmlFor="message">Your Message</label>
                             </div>
                             <div className={styles.input}>
-                                <textarea name="message" value={formdata.message} onChange={(e) => { setFormData({ ...formdata, message: e.target.value }), messvalidation(e.target.value) }} id="message"></textarea>
+                                <textarea name="message" value={formdata.comment} onChange={(e) => { setFormData({ ...formdata, comment: e.target.value }), messvalidation(e.target.value) }} id="message"></textarea>
                             </div>
                             <p className={styles.error}>{errors.message}</p>
                         </div>
                         <div className={styles.submit}>
-                            <button onClick={handleSubmit}>Submit</button>
+                            <button onClick={handleSubmit}>{loading ? "Submitting..." : "Submit"}</button>
                         </div>
                     </div>
                     <div>
@@ -177,5 +193,4 @@ const ContactFormSection = () => {
         </>
     )
 }
-
 export default ContactFormSection

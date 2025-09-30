@@ -10,8 +10,6 @@ import HomeSeventhSection from "@/sections/homeSection/seventhsection/HomeSevent
 import HomeFormSection from "@/sections/homeSection/formsection/HomeFormSection";
 
 const Home = () => {
-
-  
   return (
     <Fragment>
       {/* <Head>

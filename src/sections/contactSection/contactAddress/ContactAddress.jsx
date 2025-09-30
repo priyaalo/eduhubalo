@@ -25,7 +25,8 @@ const ContactAddress = () => {
                             <p className={styles.heading}>Hotline</p>
                         </div>
                         <div className={styles.subAddres}>
-                            <p className={styles.subhead}>+91 987-654-3210</p>
+                            <p className={styles.subhead}>+91 99947 25508,
++91 83002 96315</p>
                             <div className={styles.addresscontainer}>
                                 <div className={styles.subaddress}>
                                     <p>Assistance hours: </p>
@@ -41,8 +42,10 @@ const ContactAddress = () => {
                         <div className={styles.subAddres}>
                             <div className={styles.subaddress}>
                                 <p>
-                                    Christopher Colony Extension,<br /> Parvathipuram, Nagercoil,<br />
-                                    Tamil Nadu 629003.
+                                   2/2, Chunkankadai, Nagercoil, Tamil Nadu 629003
+
+
+
                                 </p>
                             </div>
                         </div>

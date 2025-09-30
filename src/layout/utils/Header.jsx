@@ -233,7 +233,7 @@ const Header = () => {
               )}
             </li>
 
-            <li className={path === "/Hire Talents" ? styles.active : ""} onClick={() => setActive("Hire Talents")}><Link href="/hireTalent">Hire Talents</Link></li>
+            <li className={path === "/hireTalent" ? styles.active : ""} onClick={() => setActive("Hire Talents")}><Link href="/hireTalent">Hire Talents</Link></li>
             <li className={path === "/contactus" ? styles.active : ""} onClick={() => setActive("Contact Us")}><Link href="/contactus">Contact Us</Link></li>
             <li className={path === "/certificates" ? styles.active : ""} onClick={() => setActive("Certificates")}><Link href="/certificates">Certificates</Link></li>
           </ul>
