@@ -2,7 +2,7 @@
 import PhoneInput from "react-phone-input-2";
 import { useState } from "react";
 import styles from "./HomeFormSection.module.css";
-import { postEnrollmentRequest } from "../../../../api/serviceapi";
+import { postEnrollmentRequest } from "@/api/serviceapi"
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

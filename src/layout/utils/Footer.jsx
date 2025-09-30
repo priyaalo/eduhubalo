@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { postFooterRequest } from '../../../api/serviceapi';
+import { postFooterRequest } from '@/api/serviceapi';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Footer = () => {

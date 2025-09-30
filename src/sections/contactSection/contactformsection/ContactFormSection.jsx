@@ -4,7 +4,7 @@ import styles from './contactform.module.css'
 import 'react-phone-input-2/lib/style.css'
 import PhoneInput from 'react-phone-input-2'
 import contactimg from '@/assets/contact/contactform.png'
-import { postContactRequest } from '../../../../api/serviceapi'
+import { postContactRequest } from '@/api/serviceapi'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
