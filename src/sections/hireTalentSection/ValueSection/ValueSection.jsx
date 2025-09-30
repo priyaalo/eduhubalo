@@ -11,23 +11,23 @@ import fullStack from "@/assets/hireTalent/fullstack.png";
 export const ValueSection = () => {
   return (
     <div className={styles.valueSectionContainer}>
-      <h1 className={styles.mainTitle}>The Value We Bring</h1>
+      <h1 className={styles.mainTitle}>Fields of Our Strength</h1>
       <p className={styles.subtitle}>
-        From Humble Beginnings to Leading Software Training Innovator
+        Creative Minds with Skills, Shaping a Better Future
       </p>
 
       <div className={styles.circleWrapper}>
-        {/* Round Background */}
+     
         <div className={styles.roundImg}>
           <img src={roundImg.src} alt="Round background" />
         </div>
 
-        {/* Center Logo */}
+       
         <div className={styles.logo}>
           <img src={logoImage.src} alt="Logo" />
         </div>
 
-        {/* Outer Circle (3 icons) */}
+    
         <div className={`${styles.icon} ${styles.icon1}`}>
           <img src={mobileApp.src} alt="Mobile App Development" />
         </div>
@@ -38,7 +38,7 @@ export const ValueSection = () => {
           <img src={backend.src} alt="Backend" />
         </div>
 
-        {/* Inner Circle (6 icons) */}
+ 
         <div className={`${styles.icon} ${styles.icon4}`}>
           <img src={fullStack.src} alt="Full Stack" />
         </div>

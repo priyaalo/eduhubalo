@@ -9,10 +9,10 @@ import WhySection from '@/sections/hireTalentSection/WhySection/WhySection'
 const HireTalent = () => {
   return (
     <Fragment>
-      <Head>
-        <title>hireTalent - Boiler Code</title>
+      {/* <Head>
+        <title>hireTalent - Boiler Code</title> */}
         {/* enter seo here */}
-      </Head>
+      {/* </Head> */}
       <HireHeroSection/>
       <HubSection/>
       <ValueSection/>

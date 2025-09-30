@@ -11,7 +11,7 @@ const Footer = () => {
   const [email, setEmail] = useState("")
   const [emailerror, setEmailError] = useState("")
 
-
+ 
   const validateEmail = (value) => {
     let error = "";
     if (!value.trim()) {
@@ -49,8 +49,7 @@ const Footer = () => {
               <img src={alo.src} alt="hublogo" />
             </div>
             <p>
-              Christopher Colony Extension,<br /> Parvathipuram, Nagercoil,<br />
-              Tamil Nadu 629003.
+             2/2, Chunkankadai, Nagercoil, Tamil Nadu 629003
             </p>
             <div className={styles.icon}>
               <FaTwitter />
@@ -64,18 +63,18 @@ const Footer = () => {
             <div className={styles.links}>
               <p>Links</p>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Hire Talents</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/course">Courses</a></li>
+                <li><a href="/hireTalent">Hire Talents</a></li>
+                <li><a href="/contactus">Contact Us</a></li>
               </ul>
             </div>
 
             <div className={styles.policy}>
               <p>Policy</p>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
             </div>
           </div>
 
@@ -109,6 +108,7 @@ const Footer = () => {
                 <div className={styles.call}>
                   <p>Call us</p>
                   <h6>+91 99947 25508</h6>
+<h6>+91 83002 96315</h6>
                 </div>
                 <div className={styles.email}>
                   <p>Email us</p>

@@ -16,8 +16,8 @@ export const HubSection = () => {
                             <img src={hubimg.src} alt="Team working on a project" />
                         </div>
                         <div className={styles.rightSection}>
-                            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                            <p>Our vision is to redefine education with IT courses that inspire creativity, critical thinking, and a passion for lifelong learning. Our vision is to redefine education with IT courses that inspire creativity, critical thinking, and a passion for lifelong learning. creativity, critical thinking, and a passion for lifelong learning. creativity,</p>
+                            <h2>Trained Talent, Ready for Impact</h2>
+                            <p>We shape 100+ students into job-ready professionals with real-world project experience - equipped to strengthen your team and accelerate success</p>
                             <button className={styles.hireButton}>Hire Talent</button>
                         </div>
                     </div>

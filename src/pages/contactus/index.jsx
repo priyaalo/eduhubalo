@@ -7,9 +7,9 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-      <Head>
-        <title>Contact Us</title>
-      </Head>
+      {/* <Head>
+        <title>Contact Us- Boiler Code</title>
+      </Head> */}
       <ContactBannerSection />
       <ContactFormSection />
       <ContactAddress />

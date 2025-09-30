@@ -13,12 +13,10 @@ const HireHeroSection = () => {
       <section className={styles.heroSection}>
                 <div className={styles.heroContent}>
                     <h1 className={styles.heroTitle}>
-                        Life Transitions of Our Students
+                       Tired of the Hiring Struggle?
                     </h1>
                     <p className={styles.heroText}>
-                        We believe in the power of continuous self-improvement,<br />
-                        offering innovative programs for digital readiness and
-                        positive learning experiences.
+                        Build your team with skilled talent from our Hub. 100+ industry-trained students, prepared to perform and excel from day one.
                     </p>
                     <span className={styles.bottomBorder}></span>
                     <span className={styles.leftBorder}></span>

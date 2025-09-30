@@ -40,11 +40,11 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.card1:nth-child(1) { animation-delay: 1.2s; }
-.card1:nth-child(2) { animation-delay: 1.5s; }
+.card1 { animation-delay: 1.5s; }
+
 
 @keyframes slideIn {
-  from {
+  from { 
     opacity: 0;
     transform: translateX(-100px);
   }

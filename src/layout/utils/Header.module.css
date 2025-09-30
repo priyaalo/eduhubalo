@@ -86,6 +86,7 @@
   background: white;
   flex-direction: column;
   padding: 10px 0;
+  width: 350px;
   overflow: hidden;
  
 
@@ -155,7 +156,13 @@
   width: 10px;
 
 }
+.coursesIcon {
+  display: inline-block;
+}
 
+.leftarricon {
+  display: none;
+}
 
 .button {
   padding-right: 20px;
@@ -217,28 +224,61 @@
     padding: 0%;
     
   }
+  .submenuOpen {
+  display: block !important;
+}
+
   .bar{
     border-radius:0px;
   }
   .menu {
     display: none;
   }
+.leftarricon {
+  display: inline-flex;
+  width: auto; 
+  height: auto;
+  padding-left: 203px; 
+}
+
+.leftarricon img {
+  width: 10px !important;
+  height: 10px !important;
+  object-fit: contain;
+  display: block;
+}
+
 
 .menuOpen {
   display: block;
   position: absolute;
-  top: 80px;
-  left: 50%;
+  top: 65px;
+  left: 70%;
   transform: translateX(-50%);
   width: 90%;
+  font-size: 12px;
   max-width: 400px;
   max-height: 80vh;
-  overflow-y: auto; 
+  overflow-y:auto;
   background: white;
-  border-radius: 0 0 10px 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 999;
 }
+
+
+.menu a .icon {
+  height: 14px;
+  width: 14px;
+}
+
+
+.leftarr img {
+  width: 10px !important;
+  height: 10px !important;
+  object-fit: contain;
+  display: inline-block;
+} 
+
 
   
   .menuOpen ul {
@@ -258,7 +298,7 @@
     color: black;
     font-size: 16px;
     font-weight: 500;
-    text-align: center; 
+    text-align: left; 
     display: block;
     width: 100%;
     padding: 15px 20px;
@@ -271,7 +311,7 @@
   }
 
  
-  .menuOpen .dropdown {
+ .dropdown {
   display: block !important;  
   position: static;
   width: 100%;
@@ -284,39 +324,50 @@
   display: block;              
   width: 100%;
   padding: 12px 20px 12px 30px;
-  border: 1px solid #eee;}
+  
+ }
 
   .menuOpen .leftarr img {
     display: inline !important;
 
+  }  
+  .dropdown li{
+    font-size: 13px;
   }
   .hasSubmenu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-}
 
-.hasSubmenu .leftarr {
-  margin-left: auto; 
+  margin-left: 5px;
 }
 
 
-.menuOpen .hasSubmenu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+ .leftarr {
+  margin-left: 5px;
+}
+.leftarr img {
+  width: 10px !important;
+  height: 10px !important;
+  object-fit: contain;
+  display: inline-block;
 }
 
-.menuOpen .hasSubmenu .leftarr {
-  margin-left: auto;
+
+
+.menu a img {
+  height: 40px;
+  width: 40px;
 }
 
-  .menuOpen .submenu {
+.menu a .icon {
+  height: 14px;
+  width: 14px;
+}
+ .submenu {
   display: block !important;   
   position: static;
-  width: 100%;
+
   padding: 0;
   margin: 0;
 }
@@ -326,8 +377,16 @@
   width: 100%;
   padding: 12px 20px 12px 30px; 
   font-size: 13px;
-  border: 1px solid #f2f2f2;
+ 
 }
+.submenu li{
+  font-size: 13px;
+}
+.card {
+    flex-direction: row;   
+    gap: 20px;
+  }
+
 
   .enroll {
     display: none;
@@ -336,4 +395,42 @@
   .hamburger {
     display: block;
   }
+
 }
+
+@media (max-width: 480px) {
+  .menuOpen {
+    left: 50%; 
+    width: 95%;
+    max-width: 320px;
+    max-height: 85vh; 
+    overflow-y: auto;
+    padding-bottom: 10px;
+  }
+
+  .menuOpen ul li a {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .menuOpen .dropdown li,
+  .menuOpen .submenu li {
+    padding: 10px 15px 10px 25px;
+    font-size: 12px;
+  }
+
+  .leftarricon {
+    padding-left: 150px; 
+  }
+
+  .logo img {
+    width: 70px;
+    height: 30px;
+  }
+
+  .bar {
+    gap: 0;
+    padding: 8px;
+  }
+}
+

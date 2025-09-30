@@ -10,12 +10,14 @@ import HomeSeventhSection from "@/sections/homeSection/seventhsection/HomeSevent
 import HomeFormSection from "@/sections/homeSection/formsection/HomeFormSection";
 
 const Home = () => {
+
+  
   return (
     <Fragment>
-      <Head>
-        <title>Home - Boiler Code</title>
+      {/* <Head>
+        <title>Home - Boiler Code</title> */}
         {/* enter seo here */}
-      </Head>
+      {/* </Head> */}
       <HomeHeroSection />
       <HomeSecondSection/>
       <HomeThirdSection/>

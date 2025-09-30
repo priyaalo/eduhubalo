@@ -1,4 +1,3 @@
-
 .MeetTeam {
     display: flex;
     flex-direction: column;
@@ -42,25 +41,25 @@
     padding-top: 50px;
 }
 
+
 .imageWrapper {
     position: relative;
-    top: 30px;
     width: 258px;
     height: 280px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-top: 90px;
+    overflow: visible; 
 }
+
 .imageWrapper img {
     position: absolute;
-    bottom: 0;
+    bottom: 0;              
     left: 50%;
     transform: translateX(-50%);
-    height: 377px;
+    height: 377px;             
     width: auto;
     object-fit: contain;
-    display: block;
-    transition: transform 0.4s ease-in-out; 
+    transition: transform 0.4s ease-in-out;
+    transform-origin: bottom center; 
 }
 
 .imageWrapper:hover img {
@@ -74,17 +73,6 @@
 
 .teamMember:nth-child(2) .imageWrapper {
     background-color: #e0e0ff;
-}
-
-.imageWrapper img {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 377px;
-    width: auto;
-    object-fit: contain;
-    display: block;
 }
 
 .teamMember h3 {
@@ -127,12 +115,12 @@
     .imageWrapper {
         width: 220px;
         height: 240px;
+        margin-top: 60px;
     }
     .imageWrapper img {
         height: 300px;
     }
 }
-
 
 @media (max-width: 480px) {
     .heading h2 {
@@ -141,9 +129,13 @@
     .heading p {
         font-size: 0.9rem;
     }
+    .teamContainer {
+        gap: 20px;
+    }
     .imageWrapper {
         width: 180px;
         height: 200px;
+        margin-top: 50px;
     }
     .imageWrapper img {
         height: 250px;

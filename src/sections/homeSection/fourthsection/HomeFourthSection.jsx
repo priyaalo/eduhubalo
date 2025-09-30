@@ -43,7 +43,7 @@ const HomeFourthSection = () => {
             preload="metadata"
             className={styles.video_but}
           >
-            <source src="/home.mp4" type="video/mp4" />
+            <source src="/HUB_Website.mp4" type="video/mp4" />
           </video>
 
           {!playing && (

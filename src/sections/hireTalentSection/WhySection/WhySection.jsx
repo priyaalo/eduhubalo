@@ -32,7 +32,7 @@ const WhySection=()=>{
           
         </div>
         <div className={styles.para}>
-            <p>Contact us today to know more about our services and how we can help you find the best candidates for your team!</p>
+            <p>Get in Touch Today to Learn More About Our Services and How We Can Assist You in Finding the Best Candidates for Your Team!</p>
             <button className={styles.button}>HireTalent</button>
           </div>
       </div>

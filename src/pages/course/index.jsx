@@ -12,10 +12,10 @@ import CoursesQnSection from '@/sections/CoursesSection/qnsection/CoursesQnSecti
 const Course = () => {
   return (
     <Fragment>
-      <Head>
-        <title>Courses - Boiler Code</title>
+      {/* <Head>
+        <title>Courses - Boiler Code</title> */}
         {/* enter seo here */}
-      </Head>
+      {/* </Head> */}
       <CoursesHeroSection/>
       <CoursesImageSection/>
       <CoursesCardSection/>

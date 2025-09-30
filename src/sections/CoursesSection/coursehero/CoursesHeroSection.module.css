@@ -1,16 +1,17 @@
 .heroSection {
-  background: linear-gradient(135deg, #4CA5D9, #69BDE6);
+    background-image:url('../../../assets/hero/herobg.png') ;
   min-height: 70vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding: 10rem 8rem;  /* reduced top/bottom for mobile */
-  line-height: 1.6;
-  font-family: 'Poppins', sans-serif;
+  align-items: flex-end; 
+  padding: 10rem 8rem;
   box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  background-size: cover;
 }
-
+.heroContent h1{
+  font-size: 37px;
+}
 
 .heroContent {
   position: relative;
@@ -19,13 +20,13 @@
   -webkit-backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 2rem;
-  max-width: 70%;       
-  margin: 3rem auto;    
+  max-width: 70%;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 300px;    
+  min-height: 300px;
   box-shadow: 0px 8px 20px rgba(146, 165, 218, 0.15);
   gap: 1rem;
   overflow: hidden;
@@ -36,20 +37,8 @@
 .heroContent::after,
 .heroContent span.bottomBorder,
 .heroContent span.leftBorder {
-  background: rgba(255,255,255,0.5);
-}
-
-
-.heroContent::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: white;
-  box-shadow: 0px 8px 20px rgba(202, 241, 202, 0.15);
-  animation: moveTop 6s linear infinite;
+  background: rgb(255, 255, 255);
+  opacity: 0;
 }
 
 
@@ -60,353 +49,131 @@
   right: 0;
   width: 2px;
   height: 100%;
-  animation: moveRight 6s linear infinite;
+ animation: moveLeft 3s   linear infinite;
+ animation-delay:1s;
 }
-
-
-.heroContent span.bottomBorder {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  animation: moveBottom 6s linear infinite;
-}
-
-
 .heroContent span.leftBorder {
   position: absolute;
   top: 0;
   left: 0;
   width: 2px;
   height: 100%;
-  animation: moveLeft 6s linear infinite;
-}
-.batch{ 
-  background-color: #EFFBFF; 
-  width:100%;
-   height:max-content;
-    align-items: center;
-     justify-content: center; 
-     text-align: center; 
-     padding-bottom:80px ; 
-    } 
-    
-    .card{ 
-      background-color: white;
-       width:65%; 
-       padding-top: 50px;
-        margin: auto;
-         position: relative; 
-         top: -50px; 
-         border-radius: 10px;
-    }
-.up {
-  position: relative;
-}
+  opacity: 0;
+  animation: moveLeft 3s  linear infinite;
+   animation-delay:1s;
 
-.up h1 {
-  font-size: 27px;
-  font-weight: 500;
-  padding-bottom: 40px;
-  position: relative;
-  
 }
-
-.up h1::after {
-  content: '';
+.heroContent span.bottomBorder {
   position: absolute;
-
-  left: 37%;
-  top:40px;
-  height: 2px;
-  width: 35px;
-  background: #69BDE6;
-  transition: width 0.4s ease-in-out;
-}
-
-
-.card:has(.card2:hover) .up h1::after {
-  width: 260px;
-}
-
-
-.down {
-  display: flex;
-  justify-content: center;
-  align-items: stretch; /* ✅ stretch all cards to same height */
-  gap: 3%;
-  padding-bottom: 40px;
-}
-
-.gap {
-  padding: 40px 50px 0;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  border-radius: 10px 10px 0 0;
-  position: relative;
-  min-height: 120px;
-}
-.card1 p, .card2 p{
-  color:#4CA5D9;
-  padding-bottom: 20px;
-}
-
-.card1, .card2 {
-  width: 27%;
-  display: flex;
-  flex-direction: column;
-  
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 10px;
-}
-
-
-
-.book, .book1 {
-  position: absolute;
-  top: 70px;
+  bottom: 0;
   left: 0;
-  right: 0;
-  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 2px;
+  animation: moveTop 3s linear infinite;
+  /* animation-delay: 1s; */
 }
 
-.book1 {
-  opacity: 0;
+.heroContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  animation: moveTop 3s  linear infinite;
+  /* animation-delay: 3s; */
 }
 
-.card2:hover .book {
-  opacity: 0;
-}
+@keyframes moveTop { 0%{opacity:0;}25%{opacity: 0;}50%{opacity: 1;}70%{opacity: 1;}100%{opacity: 0;} }
 
-.card2:hover .book1 {
-  opacity: 1;
-}
-
-.ash {
-  background: #616161;
-  color: #fff;
-  padding: 10px 0;
-  border-radius: 0 0 10px 10px;
-}
-
-.ash h4, .blue h4, .green h4 {
-  font-weight: 300;
-}
-
-.blue {
-  background: linear-gradient(180deg, #4CA5D9 0%, #69BDE6 100%);
-  color: #fff;
-  padding: 10px 0;
-  border-radius: 0 0 10px 10px;
-}
-
-.green {
-  background: #58D697;
-  color: #fff;
-  padding: 10px 0;
-  border-radius: 0 0 10px 10px;
-}
-
-
-
-@keyframes moveTop { 0% { transform: translateX(-100%); } 50% { transform: translateX(0); } 100% { transform: translateX(100%); } }
-@keyframes moveRight { 0% { transform: translateY(-100%); } 50% { transform: translateY(0); } 100% { transform: translateY(100%); } }
-@keyframes moveBottom { 0% { transform: translateX(100%); } 50% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-@keyframes moveLeft { 0% { transform: translateY(100%); } 50% { transform: translateY(0); } 100% { transform: translateY(-100%); } }
+@keyframes moveLeft { 0%{opacity:0;}25%{opacity: 0;}50%{opacity: 1;}70%{opacity: 1;}100%{opacity: 0;} } 
 
 
 .heroTitle {
-  font-size: clamp(1.5rem, 4vw, 2.3rem); 
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 600;
   color: #ffffff;
-  line-height: 1.2;       
-  margin-bottom: 0.5rem;  
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
-
 .heroText {
   font-size: clamp(0.8rem, 2.5vw, 1rem);
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.4;       
-  margin-bottom: 1.5rem; 
+  line-height: 1.4;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-
-.iconWrapper {
-  display: inline-flex;           
+.iconWrapper, .downArrow {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(35px, 5vw, 50px);
-  height: clamp(35px, 5vw, 50px);
-  border-radius: 50%;             
+  border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s;
   border: 1px solid white;
+  transition: background 0.3s;
+  color:white;
 }
-.iconWrapper:hover {
-  background-color: rgba(255,255,255,0.4); 
-}
-
-
+.iconWrapper:hover { background-color: white; }
 .downArrow {
-  font-size: clamp(1rem, 3vw, 1.5rem);               
-  color: #fff;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   width: clamp(35px, 5vw, 50px);
   height: clamp(35px, 5vw, 50px);
-  border-radius: 50%;             
-  border: 1px solid white;
-  display: flex;                   
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto 0 auto;    
-  cursor: pointer;
-  animation: bounce 2s infinite;  
-  transition: background 0.3s;
+  margin: 1rem auto 0 auto;
+  animation: bounce 2s infinite;
 }
-.downArrow:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(8px); }
-  60% { transform: translateY(4px); }
-}
+@keyframes bounce { 0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(8px)}60%{transform:translateY(4px)} }
 
-@media (max-width: 768px) {
-  .heroSection { padding: 4rem 1rem; min-height: 50vh; }
-  .heroContent { padding: 1.5rem 1rem; min-height: 280px; gap: 0.6rem; }
-}
-
-@media (max-width: 480px) {
-  .heroSection { 
-    padding: 3rem 0.5rem; 
-    width: 100%;         /* take full device width */
-    max-width: none;     /* remove limit */
-  }
-  .heroTitle { font-size: 16px; }
-  .heroText { font-size: 8px; }
-  .heroContent { padding: 1rem; max-width: max-content;  }
-}
-@media (max-width: 1200px) {
-  .up h1 {
-    font-size: 28px;
-  }
-
-
-  .card1,
-  .card2 {           
-    max-width: 320px;
-  }
-
-
-}
-
-
+/* ===== Tablet ===== */
 @media (max-width: 1024px) {
-
-  .down {
-    justify-content: space-evenly;
-  }
-  .card1,
-  .card2 {           
-    flex: 1 1 45%;
-  }
-}
-
-  @media (max-width: 900px) {
-  .down {
-    flex-direction: row;  
+  .heroSection {
+    padding: 6rem 3rem;
+    min-height: 60vh;
     align-items: center;
-   
   }
-  .card1,
-  .card2 {          
-    width: 85%;
+  .heroContent {
+    max-width: 80%;
+    padding: 1.5rem 1.5rem;
+    min-height: 280px;
+    gap: 0.8rem;
   }
-  .card{
-    padding: 20px;
-  }
-  
-
 }
 
-
-  
-@media(max-width:768px){
-   .up h1 {
-    font-size: 18px;
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 1rem;
+    min-height: 55vh;
+    align-items: center;
   }
-    .down{
-      display: flex;
-      flex-direction: column;
-       gap:30px;
-       
-
-    }
-    .batch{
-      width:100%;
-      background-color: white;
-      
-    }
-    .downn{
-      height:70px;
-      background-color: #EFFBFF;
-    }
-   .card{
-      gap:20px;
-      width:100%;
-      position: none;
-   
-      top: 0px;
-    }
+  .heroContent {
+    max-width: 90%;
+    padding: 1.2rem 1rem;
+    min-height: 250px;
+    gap: 0.6rem;
+  }
+  .heroTitle { font-size: 1.2rem; }
+  .heroText { font-size: 0.5rem; }
 }
 
-  
-@media(max-width:480px){
-   .up h1 {
-    font-size: 16px;
+/* ===== Small Mobile ===== */
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
   }
-    .down{
-      display: flex;
-      flex-direction: column;
-       gap:30px;
-    }
-    .gap h3 {
-    font-size: 11.5px;
+  .heroContent {
+    max-width: 95%;
+    min-height: 220px;
+    padding: 1rem;
   }
-
-  .gap p {
-    font-size: 11px;
-  }
-    
-    .card{
-      gap:20px;
-      width:70%;
-    }
+  .heroTitle { font-size: 1.2rem; }
+  .heroText { font-size: 0.7rem; }
 }
-@media (max-width: 320px) {
-  .up h1 {
-    font-size: 15px;
-  }
-    .down{
-      display: flex;
-      flex-direction: column;
-       gap:30px;
-    }
-    .gap h3 {
-    font-size: 12px;
-  }
-
-  .gap p {
-    font-size: 11px;
-  }
-    
-    .card{
-      gap:20px;
-      width:80%;
-    }
-}
-
-

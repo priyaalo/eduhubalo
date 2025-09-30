@@ -15,29 +15,42 @@ const Header = () => {
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false); 
   const dropdownRef = useRef(null);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768 && menuOpen) {
-        setMenuOpen(false);
-      }
-    };
-    
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && 
-          event.target instanceof Node && 
-          !dropdownRef.current.contains(event.target)) {
-        setOpenSubmenu(null);
-      }
-    };
+ useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth > 768 && menuOpen) {
+      setMenuOpen(false);
+    }
+  };
 
-    window.addEventListener('resize', handleResize);
-    document.addEventListener('mousedown', handleClickOutside);
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [menuOpen]);
+  const handleClickOutside = (event) => {
+    if (
+      dropdownRef.current &&
+      event.target instanceof Node &&
+      !dropdownRef.current.contains(event.target)
+    ) {
+      setOpenSubmenu(null);
+    }
+
+    if (
+      menuOpen &&
+      !event.target.closest(`.${styles.menu}`) &&
+      !event.target.closest(`.${styles.hamburger}`)
+    ) {
+      setMenuOpen(false);
+      setMobileCoursesOpen(false);
+      setOpenSubmenu(null);
+    }
+  };
+
+  window.addEventListener("resize", handleResize);
+  document.addEventListener("mousedown", handleClickOutside);
+
+  return () => {
+    window.removeEventListener("resize", handleResize);
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [menuOpen]);
+
 
   const path = usePathname();
   
@@ -51,7 +64,7 @@ const Header = () => {
   };
 
   const handleCoursesMouseLeave = (e) => {
-    // Fixed: Added proper type checking
+   
     if (!e.relatedTarget || 
         !dropdownRef.current || 
         !(e.relatedTarget instanceof Node) || 
@@ -64,7 +77,7 @@ const Header = () => {
 
   const handleDropdownLeave = (e) => {
     const relatedTarget = e.relatedTarget;
-    // Fixed: Added proper type checking
+
     if (!relatedTarget || 
         !(relatedTarget instanceof Node) ||
         (!relatedTarget.closest(`.${styles.submenu}`) && 
@@ -107,7 +120,10 @@ const Header = () => {
                   e.preventDefault(); 
                 }
               }}>
-                Courses <img src={im6.src} alt="down" />
+                Courses <img  className={styles.icon}src={im6.src} alt="down" />
+                <div className={styles.leftarricon}>
+                        <img src={imgg.src} alt="arrow" />
+                      </div>
               </Link>
 
               {(isCoursesHovered || (menuOpen && mobileCoursesOpen)) && (
@@ -129,7 +145,7 @@ const Header = () => {
                         <img src={imgg.src} alt="arrow" />
                       </div>
                     </div>
-                    {openSubmenu === "Advanced Courses" && (
+                    {openSubmenu === "Advanced Courses" &&  (
                       <ul className={styles.submenu}>
                         <li>Full Stack Development with UIUX Design</li>
                         <li>Frontend Development with UIUX Design</li>
@@ -217,7 +233,7 @@ const Header = () => {
               )}
             </li>
 
-            <li className={path === "/hireTalent" ? styles.active : ""} onClick={() => setActive("Hire Talents")}><Link href="/hireTalent">Hire Talents</Link></li>
+            <li className={path === "/Hire Talents" ? styles.active : ""} onClick={() => setActive("Hire Talents")}><Link href="/hireTalent">Hire Talents</Link></li>
             <li className={path === "/contactus" ? styles.active : ""} onClick={() => setActive("Contact Us")}><Link href="/contactus">Contact Us</Link></li>
             <li className={path === "/certificates" ? styles.active : ""} onClick={() => setActive("Certificates")}><Link href="/certificates">Certificates</Link></li>
           </ul>
