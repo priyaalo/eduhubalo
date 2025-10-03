@@ -12,7 +12,7 @@ const App = ({ Component, pageProps }) => {
       <WebLayout>
         <Head>
           <title>IT Training Institute | ALO Educational Hub | Nagercoil</title>
-           {/* <link rel="icon" href="/Logo/alo hub white.png" /> */}
+            <link rel="icon" href="/Logo/hub cap logo.png" />
     
         </Head>
         
