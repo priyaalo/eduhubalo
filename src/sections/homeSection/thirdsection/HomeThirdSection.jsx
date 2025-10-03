@@ -106,9 +106,9 @@ const HomeThirdSection = () => {
                 <h3>{course.title}</h3>
                 <div className={styles.border}>
                   <div className={styles.small}>
-                    <img src={image7.src} rel="girl" className={styles.small1}></img>
-                    <img src={image8.src} rel="tshirt" className={styles.small2}></img>
-                    <img src={image9.src} rel="shirt" className={styles.small3}></img>
+                    <img src={image7.src} rel="girl" className={styles.small1} alt="im7"></img>
+                    <img src={image8.src} rel="tshirt" className={styles.small2} alt="im8"></img>
+                    <img src={image9.src} rel="shirt" className={styles.small3} alt="im9"></img>
                   </div>
                   <div className={styles.join}>
                     <h6>Join over <span className={styles.highlight}>200+ </span>students</h6>
@@ -124,9 +124,9 @@ const HomeThirdSection = () => {
                   <h3>Certification Course in <br />Web Development & UI/UX Design </h3>
                   <div className={styles.border}>
                     <div className={styles.small}>
-                      <img src={image7.src} rel="girl" className={styles.small1}></img>
-                      <img src={image8.src} rel="tshirt" className={styles.small2}></img>
-                      <img src={image9.src} rel="shirt" className={styles.small3}></img>
+                      <img src={image7.src} rel="girl" className={styles.small1} alt="im7"></img>
+                      <img src={image8.src} rel="tshirt" className={styles.small2} alt="im8"></img>
+                      <img src={image9.src} rel="shirt" className={styles.small3} alt="im9"></img>
                     </div>
                    <div className={styles.join}>
                      <h6>Join over <span className={styles.highlight}>200+ </span>students</h6>

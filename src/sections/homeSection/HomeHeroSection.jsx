@@ -28,14 +28,14 @@ const HomeHeroSection = () => {
   const router = useRouter();
 
   const handleEnrollClick = () => {
-    // If already on home page, just scroll
+    
     if (router.pathname === "/home" || router.pathname === "/") {
       const element = document.getElementById("contact-form");
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // Navigate to home with hash
+     
       router.push("/home#contact-form");
     }
   };
@@ -67,7 +67,7 @@ const HomeHeroSection = () => {
                   className={styles.search_input} />
 
                 <button className={styles.search_button} onClick={handleSearch}>
-                  <img src={img4.src} rel="icon"></img>
+                  <img src={img4.src} rel="icon" alt="img"></img>
                 </button>
               </div></div></div>
 

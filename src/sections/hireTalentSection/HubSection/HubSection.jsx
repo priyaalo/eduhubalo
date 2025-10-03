@@ -20,7 +20,6 @@ export const HubSection = () => {
 
   const [errors, setErrors] = useState({});
 
-  
   const openModal = () => {
     setIsOpen(true);
     setFormData({
@@ -35,7 +34,6 @@ export const HubSection = () => {
   };
 
   const closeModal = () => setIsOpen(false);
-
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -70,7 +68,6 @@ export const HubSection = () => {
     return newErrors;
   };
 
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validateForm();
@@ -87,7 +84,6 @@ export const HubSection = () => {
 
         if (res.status === 200) {
           toast.success("Enrollment Successful!");
-
           setFormData({
             name: "",
             phone: "",
@@ -148,7 +144,7 @@ export const HubSection = () => {
                 className={styles.modalLogo}
               />
               <h2>Hire Talent From Us</h2>
-              <p>Have any questions? We're here to assist you.</p>
+              <p>Have any questions? We&apos;re here to assist you.</p>
             </div>
 
             <form className={styles.form} onSubmit={handleSubmit}>
@@ -231,7 +227,7 @@ export const HubSection = () => {
           </div>
         </div>
       )}
-       <ToastContainer position="top-right" autoClose={1000} />
+      <ToastContainer position="top-right" autoClose={1000} />
     </Fragment>
   );
 };
