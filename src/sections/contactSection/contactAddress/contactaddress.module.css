@@ -18,8 +18,13 @@
 }
 .subhead {
   font-weight: 500;
+  color: white !important;
+  text-decoration: none;
 }
-
+.subhead a{
+  color: white !important;
+  text-decoration: none;
+}
 .heading {
   font-weight: 600;
 }

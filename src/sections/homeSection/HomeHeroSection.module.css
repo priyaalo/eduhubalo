@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   min-height: 100vh;
-  min-height: 100dvh; /* Uses dynamic viewport height for mobile */
+  min-height: 100dvh; 
   justify-content: center;
   align-items: center;
   background-image: url("../../assets/hero/herobg.png");
@@ -22,7 +22,6 @@
   padding: 0px 20px;
 }
 
-/* LEFT TEXT CONTENT */
 .left {
   flex: 1;
   color: white;
@@ -39,7 +38,7 @@
 }
 
 .left p {
-  font-size: clamp(1rem, 2vw, 1.4rem); /* Responsive font size */
+  font-size: clamp(1rem, 2vw, 1.4rem); 
   font-family: poppins;
   color: #dce3e9;
   max-width: 600px;
@@ -140,7 +139,7 @@
   padding: 4px 45px;
 }
 
-/* RIGHT SIDE */
+
 
 .right {
   position: relative;

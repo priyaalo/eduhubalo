@@ -25,13 +25,13 @@ const HomeSecondSection = () => {
             <div className={styles.future}>
               
               <h3>Certification Course in Full - Stack Development & UI/UX Design</h3>
-              <a href="#" className={styles.link}>Learn More<span> →</span></a>
+              <a  className={styles.link}>Learn More<span> →</span></a>
             </div>
 
             <div className={styles.future1}>
               
               <h3>Begin your path to Full- Stack Development & UI/UX mastery with our exclusive program! Join today and swiftly gain expertise in both fields.`</h3>
-              <a href="#" className={styles.link}>Explore<span className={styles.highlight}> →</span></a>
+              <a  className={styles.link}>Explore<span className={styles.highlight}> →</span></a>
             </div>
           </div>
         </div>
@@ -54,13 +54,13 @@ const HomeSecondSection = () => {
               <h3>Certification Course in Mobile App Development & UI/UX Design</h3>
 
 
-              <a href="#" className={styles.link}>Learn More <span> →</span></a>
+              <a className={styles.link}>Learn More <span> →</span></a>
             </div>
 
             <div className={styles.future1}>
               
               <h3>Begin your path to becoming a Mobile App Development and UI/UX specialist with our exclusive program. Enroll today to hone your skills and excel in both areas swiftly!</h3>
-              <a href="#" className={styles.link}>Explore<span className={styles.highlight}> →</span></a>
+              <a  className={styles.link}>Explore<span className={styles.highlight}> →</span></a>
 
 
             </div>

@@ -23,7 +23,7 @@ const Home = () => {
       <HomeFifthSection/>
       <HomeSixthSection/>
       <HomeSeventhSection/>
-      <HomeFormSection/>
+      <HomeFormSection />
     </Fragment>
   );
 };

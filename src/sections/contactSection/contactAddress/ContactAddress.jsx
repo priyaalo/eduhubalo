@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './contactaddress.module.css'
+import Link from 'next/link'
 
 const ContactAddress = () => {
     return (
@@ -11,7 +12,7 @@ const ContactAddress = () => {
                             <p className={styles.heading}>Email Address</p>
                         </div>
                         <div className={styles.subAddres}>
-                            <p className={styles.subhead}>contact@aloeducationalhub.com</p>
+                            <Link href="mailto:contact@aloeducationalhub.com" style={{ textDecoration: 'none' }}><p className={styles.subhead}>contact@aloeducationalhub.com</p></Link>
                             <div className={styles.addresscontainer}>
                                 <div className={styles.subaddress}>
                                     <p>Assistance hours: </p>
@@ -25,8 +26,8 @@ const ContactAddress = () => {
                             <p className={styles.heading}>Hotline</p>
                         </div>
                         <div className={styles.subAddres}>
-                            <p className={styles.subhead}>+91 99947 25508,
-+91 83002 96315</p>
+                            <p className={styles.subhead}><Link href="tel:+91 99947 25508">+91 99947 25508</Link>,
+                                       <span> <Link href="tel:+91 83002 96315">+91 83002 96315</Link></span> </p>
                             <div className={styles.addresscontainer}>
                                 <div className={styles.subaddress}>
                                     <p>Assistance hours: </p>

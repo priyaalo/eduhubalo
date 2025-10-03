@@ -64,7 +64,7 @@
   border-radius: 6px;
   padding-left: 45px; 
   border: 1px solid black;
-  height: 50px; /* match other inputs */
+  height: 50px; 
 }
 
 .buttonn {
@@ -76,8 +76,8 @@
 .btn {
   background: linear-gradient(180deg, #4CA5D9 0%, #69BDE6 100%);
   color: white;
-  padding: 12px 20px; /* original size */
-  font-size: 15px;    /* original size */
+  padding: 12px 20px; 
+  font-size: 15px;   
   border: none;
   border-radius: 6px;
   cursor: pointer;

@@ -5,6 +5,8 @@ import styles from "./HomeFormSection.module.css";
 import { postEnrollmentRequest } from "@/api/serviceapi"
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import 'react-phone-input-2/lib/style.css'
+
 
 const HomeFormSection = () => {
   const [formData, setFormData] = useState({
@@ -55,12 +57,12 @@ const HomeFormSection = () => {
         const res = await postEnrollmentRequest({
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
+          mobileNo: formData.phone,
           education: formData.education,
           course: formData.course,
           enrollType: "phone",
           message: "",
-          subAdminId: "672dc6e968f8505e6d8e9d44", 
+          subAdminId: "672dc6e968f8505e6d8e9d44",
         });
 
         if (res.status === 200) {
@@ -83,7 +85,7 @@ const HomeFormSection = () => {
 
   return (
     <>
-      <div className={styles.homeform}>
+      <div className={styles.homeform} id="contact-form">
         <div className={styles.container}>
           <h2 className={styles.title}>Let’s Connect</h2>
           <form onSubmit={handleSubmit} className={styles.form}>
@@ -163,7 +165,7 @@ const HomeFormSection = () => {
                 <option value="HRM">HRM</option>
                 <option value="tally">Tally</option>
                 <option value="ai">Artificial Intelligence</option>
-                 <option value="ds">Data Science</option>
+                <option value="ds">Data Science</option>
               </select>
               <p className={styles.error}>{errors.course}</p>
             </div>
@@ -178,7 +180,7 @@ const HomeFormSection = () => {
       </div>
 
    
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={1000} />
     </>
   );
 };

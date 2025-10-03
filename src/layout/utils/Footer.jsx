@@ -11,9 +11,25 @@ import { useRouter } from 'next/router';
 import { postFooterRequest } from '@/api/serviceapi';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import { useRouter } from "next/router";
+
 const Footer = () => {
   const [email, setEmail] = useState("")
   const [emailerror, setEmailError] = useState("")
+  const router = useRouter();
+
+  const handleEnrollClick = () => {
+    // If already on home page, just scroll
+    if (router.pathname === "/home" || router.pathname === "/") {
+      const element = document.getElementById("contact-form");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate to home with hash
+      router.push("/home#contact-form");
+    }
+  };
 
   useEffect(() => {
     setEmailError("");
@@ -52,18 +68,18 @@ const Footer = () => {
     }
   };
 
-  const router = useRouter();
+  const routers = useRouter();
 
   useEffect(() => {
     const handleRouteChange = () => {
       setEmail("");
       setEmailError("");
     };
-    router.events.on("routeChangeStart", handleRouteChange);
+    routers.events.on("routeChangeStart", handleRouteChange);
     return () => {
-      router.events.off("routeChangeStart", handleRouteChange);
+      routers.events.off("routeChangeStart", handleRouteChange);
     };
-  }, [router.events]);
+  }, [routers.events]);
 
 
 
@@ -74,7 +90,7 @@ const Footer = () => {
         <div className={styles.up}>
           <h3>Transform Your IT Career with ALO Educational Hub Today!</h3>
           <div className={styles.button}>
-            <button className={styles.enroll} type="submit">Enroll Now</button>
+            <button className={styles.enroll} type="submit" onClick={handleEnrollClick}>Enroll Now</button>
           </div>
         </div>
 
@@ -82,7 +98,7 @@ const Footer = () => {
           <div className={styles.white}>
             <div className={styles.address}>
               <div className={styles.logo_img}>
-                <img src={alo.src} alt="hublogo" />
+                <Link href='/home'> <img src={alo.src} alt="hublogo" /></Link>
               </div>
               <p>
                 2/2, Chunkankadai, Nagercoil, Tamil Nadu 629003
@@ -109,8 +125,8 @@ const Footer = () => {
 
               <div className={styles.policy}>
                 <p>Policy</p>
-                <li><Link href="#">Privacy Policy</Link></li>
-                <li><Link href="#">Terms & Conditions</Link></li>
+                <li><Link href="/policy">Privacy Policy</Link></li>
+                <li><Link href="/terms">Terms & Conditions</Link></li>
               </div>
             </div>
 
@@ -143,12 +159,12 @@ const Footer = () => {
                 <div className={styles.qc}>
                   <div className={styles.call}>
                     <p>Call us</p>
-                    <h6>+91 99947 25508</h6>
-                    <h6>+91 83002 96315</h6>
+                    <Link href="tel:+91 99947 25508" style={{ textDecoration: 'none' }}> <h6>+91 99947 25508</h6></Link>
+                    <Link href="tel:+91 83002 96315" style={{ textDecoration: 'none' }}>   <h6>+91 83002 96315</h6></Link>
                   </div>
                   <div className={styles.email}>
                     <p>Email us</p>
-                    <h6>contact@aloeducationalhub.com</h6>
+                    <Link href="mailto:contact@aloeducationalhub.com" style={{ textDecoration: 'none' }}>  <h6>contact@aloeducationalhub.com</h6></Link>
                   </div>
                 </div>
               </div>

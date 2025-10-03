@@ -11,3 +11,10 @@ export const postContactRequest = (contactData) => {
 export const postFooterRequest = (feedbackData) => {
    return apiService.post(`/footer`, {'email':feedbackData});
 };
+export const postHireTalentRequest=(hireTalentData)=>{
+   return apiService.post(`/hire`,hireTalentData)
+}
+
+export const postCertificate = (data) => {
+   return apiService.post(`/user/login`, data);
+}

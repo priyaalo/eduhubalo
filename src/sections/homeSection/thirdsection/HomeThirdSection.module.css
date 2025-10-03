@@ -13,8 +13,9 @@
   display: flex;
   gap: 22px;
   width:100%;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
+  padding: 0px 20px;
 }
 
 .head h1 {
@@ -40,7 +41,7 @@
   bottom: -4px;
   height: 2px;
   background: #69BDE6;
-  width: 7%;
+  width: max-content;
   transition: width 0.8s;
   z-index: 999;
 }
@@ -198,6 +199,7 @@
 .link {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 
 }
 .highlight {

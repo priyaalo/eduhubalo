@@ -166,14 +166,14 @@
 }
 
 .header h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 500;
   color: white;
 }
 
 .header p {
-  font-size: 16px;
-  max-width: 700px;
+  font-size: 13px;
+  max-width: 500px;
   margin: 10px auto 40px auto;
   color: #f5f5f5;
   line-height: 1.6;
@@ -212,20 +212,28 @@
 }
 .homePageCarousalSplit h2 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .homePageCarousalSplit p {
   color: #000;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .img1 img {
   width: 25px;
 }
 .img2 img{
-  width:60px
+  width: 50px;
+    height: 50px; /* Explicitly set height equal to width */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border-radius: 50%;
+  
+}
+.img2 h5{
+  font-size: 13px;
+
 }
 
 .homePageCarousalSplitDivs {

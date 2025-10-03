@@ -6,6 +6,8 @@ import im6 from '@/assets/header/down.png';
 import { usePathname } from 'next/navigation';
 import imgg from '../../assets/header/arr.png'
 import Link from 'next/link';
+import { useRouter } from "next/router";
+
 
 const Header = () => {
   const [active, setActive] = useState("Home");
@@ -14,6 +16,20 @@ const Header = () => {
   const [isCoursesHovered, setIsCoursesHovered] = useState(false);
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false); 
   const dropdownRef = useRef(null);
+   const router = useRouter();
+
+  const handleEnrollClick = () => {
+    
+    if (router.pathname === "/home" || router.pathname === "/") {
+      const element = document.getElementById("contact-form");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+     
+      router.push("/home#contact-form");
+    }
+  };
 
  useEffect(() => {
   const handleResize = () => {
@@ -102,7 +118,7 @@ const Header = () => {
     <div className={styles.nav}>
       <div className={styles.bar}>
         <div className={styles.logo}>
-          <img src={image.src} alt="logo" />
+          <Link href='/home'><img src={image.src} alt="logo" /></Link>
         </div>
 
         <div className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}>
@@ -240,7 +256,7 @@ const Header = () => {
         </div>
 
         <div className={styles.button}>
-          <button className={styles.enroll} type="submit">Enroll Now</button>
+          <button className={styles.enroll} type="submit" onClick={handleEnrollClick}>Enroll Now</button>
         </div>
 
         <div className={styles.hamburger} onClick={toggleMenu}>
