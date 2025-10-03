@@ -35,7 +35,7 @@ const HomeFifthSection = () => {
             <div className={styles.bottom}>
                 <div className={styles.card}>
                     {visibleStudents.map((student, index) => (
-                        <div className={styles.card1}>
+                        <div className={styles.card1} key={index}>
                             <img src={student.img} alt="greenimg"></img>
                             <h3>{student.name}</h3>
                             <p>{student.job}</p>

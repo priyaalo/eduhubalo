@@ -91,7 +91,7 @@ const HomeThirdSection = () => {
       </div>
       <div className={styles.card}>
         {visibleCourses.map((course, index) => (
-          <div className={styles.card1}>
+          <div className={styles.card1} key={index}>
             <div className={styles.courses}>
               <img src={course.image} alt="Course1" />
             </div>
