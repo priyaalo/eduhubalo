@@ -139,8 +139,6 @@
   padding: 4px 45px;
 }
 
-
-
 .right {
   position: relative;
   width: 580px;
@@ -177,8 +175,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation:rotateMe 20s linear infinite;
-  
+  animation:rotateMe 45s linear infinite;
+}
+
+.bigcircle:hover {
+  /* animation-play-state: paused; */
+
 }
 
 @keyframes rotateMe {
@@ -430,10 +432,10 @@
     padding-top: 20px;
   }
   .left h2 {
-    font-size: 45px;  
+    font-size: 30px;  
   }
   .left p {
-    font-size: 22px;
+    font-size: 18px;
 
   }
   .click {
@@ -540,11 +542,11 @@
     padding-top: 60px;
   }
   .left h2 {
-    font-size: 23px; 
+    font-size: 25px; 
     max-width:100%;
   }
   .left p {
-    font-size: 10px; 
+    font-size: 14px; 
     padding-bottom: 20px;
    
   }
@@ -630,14 +632,14 @@
 
 @media (max-width: 320px) {
   .section{
-    padding: 20px;
+    /* padding: 20px; */
     padding-top: 60px;
   }
   .left h2 {
     font-size: 16px; 
   }
   .left p {
-    font-size: 8px; 
+    font-size:12px; 
     padding-bottom: 20px;
    
   }

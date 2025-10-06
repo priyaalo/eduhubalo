@@ -2,24 +2,8 @@
 import { useState } from "react";
 import styles from "./CoursesQnSection.module.css";
 
-const CoursesQnSection=()=> {
+const CoursesQnSection=({ qna })=> {
   const [activeIndex, setActiveIndex] = useState(null);
-
-  const faqs = [
-    {
-      question: "How do I track my project?",
-      answer: "You can track your project in real-time through the dashboard."
-    },
-    {
-      question: "How do I track my project?",
-      answer: "All project details are visible in your account under 'My Projects'."
-    },
-    {
-      question: "How do I track my project?",
-      answer: "We also send weekly email notifications about project progress."
-    }
-  ];
-
   return (
     <section className={styles.Section}>
       <div className={styles.container}>
@@ -29,7 +13,7 @@ const CoursesQnSection=()=> {
         </p>
 
         <div className={styles.List}>
-          {faqs.map((faq, index) => (
+          {qna.map((item, index) => (
             <div
               key={index}
               className={`${styles.Item} ${
@@ -38,13 +22,13 @@ const CoursesQnSection=()=> {
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(null)}
             >
-              <p className={styles.question}>{faq.question}</p>
+              <p className={styles.question}>{item.q}</p>
               <div
                 className={`${styles.answerWrapper} ${
                   activeIndex === index ? styles.show : ""
                 }`}
               >
-                <p className={styles.answer}>{faq.answer}</p>
+                <p className={styles.answer}>{item.a}</p>
               </div>
             </div>
           ))}

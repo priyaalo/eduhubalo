@@ -18,3 +18,9 @@ export const postHireTalentRequest=(hireTalentData)=>{
 export const postCertificate = (data) => {
    return apiService.post(`/user/login`, data);
 }
+export const getTestimonials = () => {
+  return apiService.get(`/testmonials/data`);
+};
+export const getAlumni = () => {
+  return apiService.get(`/alumni`); 
+};

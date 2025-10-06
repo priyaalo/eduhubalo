@@ -10,12 +10,12 @@ const ContactBannerSection = () => {
             <section className={styles.heroSection}>
                 <div className={styles.heroContent}>
                     <h1 className={styles.heroTitle}>
-                        Life Transitions of Our Students
+                        Get In Touch With Us!
+
                     </h1>
                     <p className={styles.heroText}>
-                        We believe in the power of continuous self-improvement,<br />
-                        offering innovative programs for digital readiness and
-                        positive learning experiences.
+                       Interested in Discussing your IT Training Vision? We're here to Assist you.
+
                     </p>
                     <span className={styles.bottomBorder}></span>
                     <span className={styles.leftBorder}></span>

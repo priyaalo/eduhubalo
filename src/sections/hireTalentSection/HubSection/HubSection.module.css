@@ -134,14 +134,17 @@
   }
 
   .rightSection h2 {
-    font-size: 1.3rem;
+    font-size: 14px;
   }
 
   .rightSection p {
-    font-size: 0.9rem;
+    font-size: 12px;
     line-height: 1.5;
   }
-
+.Headings h2
+{
+  font-size: 22px;
+}
   .hireButton {
     align-self: center;
     font-size: 0.9rem;

@@ -3,8 +3,9 @@ import PhoneInput from "react-phone-input-2";
 import { useState } from "react";
 import styles from "./HomeFormSection.module.css";
 import { postEnrollmentRequest } from "@/api/serviceapi"
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import {  toast, ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
 import 'react-phone-input-2/lib/style.css'
 
 
@@ -85,6 +86,7 @@ const HomeFormSection = () => {
 
   return (
     <>
+<ToastContainer/>
       <div className={styles.homeform} id="contact-form">
         <div className={styles.container}>
           <h2 className={styles.title}>Let’s Connect</h2>
@@ -180,7 +182,7 @@ const HomeFormSection = () => {
       </div>
 
    
-      <ToastContainer position="top-right" autoClose={1000} />
+
     </>
   );
 };

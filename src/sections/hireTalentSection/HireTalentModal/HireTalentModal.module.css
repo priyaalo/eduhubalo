@@ -1,0 +1,80 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  position: relative;
+  max-height: 90vh; /* ✅ make modal scrollable */
+  overflow-y: auto;
+}
+
+.modalLogo {
+  width: 80px;
+  margin-top: 40px; /* ✅ logo slightly down */
+  margin-bottom: 15px;
+}
+
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modalHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* .modalLogo {
+  width: 80px;
+  margin-top: 20px;
+} */
+
+.form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submitButton {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

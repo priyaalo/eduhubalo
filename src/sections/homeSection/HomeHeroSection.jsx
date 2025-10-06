@@ -11,10 +11,11 @@ import img6 from '@/assets/hero/java.png'
 import img12 from '@/assets/hero/arrow.png'
 import img8 from '@/assets/hero/v.png'
 import img7 from '@/assets/hero/figma.png'
-import img11 from '@/assets/hero/python.png'
-import img10 from '@/assets/hero/tally.png'
+import img11 from '@/assets/hero/python1.png'
+import img10 from '@/assets/hero/tally1.png'
 import img9 from '@/assets/hero/react.png'
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 
 const HomeHeroSection = () => {
@@ -26,17 +27,29 @@ const HomeHeroSection = () => {
   };
 
   const router = useRouter();
+  const routercourse = useRouter();
+
 
   const handleEnrollClick = () => {
-    
+
     if (router.pathname === "/home" || router.pathname === "/") {
       const element = document.getElementById("contact-form");
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-     
+
       router.push("/home#contact-form");
+    }
+  };
+
+  const handleAdvanceCourse = () => {
+    // If already on home page, just scroll
+    if (routercourse.pathname === "/home" || routercourse.pathname === "/") {
+      const element = document.getElementById("courses");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
   return (
@@ -54,7 +67,7 @@ const HomeHeroSection = () => {
 
             <div className={styles.click}>
               <button className={styles.enroll1} type="submit" onClick={handleEnrollClick}>Enroll Now</button>
-              <button className={styles.course} type="submit">Explore Advanced Courses</button>
+              <button className={styles.course} type="submit" onClick={handleAdvanceCourse}>Explore Advanced Courses</button>
             </div>
             <div className={styles.bar}>
               <div className={styles.searchbar}>
@@ -79,27 +92,27 @@ const HomeHeroSection = () => {
                 <img src={img1.src} alt="Circle with Icons" className={styles.frame} />
 
                 <div className={styles.imgg1}>
-                  <img src={img5.src} alt="angular" className={styles.angular} />
+                  <Link href='/course?type=analytics'>   <img src={img5.src} alt="analytics" className={styles.angular} /></Link>
                 </div>
                 <div className={styles.imgg8}>
-                  <img src={img12.src} alt="arrow" className={styles.arrow} />
+                 <Link href='/course?type=mobileapp'> <img src={img12.src} alt="arrow" className={styles.arrow} /></Link> 
                 </div>
                 <div className={styles.imgg5}>
-                  <img src={img9.src} alt="react" className={styles.react} />
+                  <Link href='/course?type=frontenddev'> <img src={img9.src} alt="react" className={styles.react} /></Link>
                 </div>
                 <div className={styles.imgg7}>
-                  <img src={img11.src} alt="python" className={styles.python} />
+                 <Link href='/course?type=python'> <img src={img11.src} alt="python" className={styles.python} /></Link> 
                 </div>
                 <div className={styles.imgg6}>
-                  <img src={img10.src} alt="tally" className={styles.tally} />
+                   <Link href='/course?type=tally'> <img src={img10.src} alt="tally" className={styles.tally} /></Link>
                 </div>
                 <div className={styles.imgg4}>
-                  <img src={img8.src} alt="v" className={styles.v} />
+                <Link href='/course?type=digital'> <img src={img8.src} alt="v" className={styles.v} /></Link> 
                 </div><div className={styles.imgg3}>
-                  <img src={img7.src} alt="figma" className={styles.figma} />
+                <Link href='/course?type=uiux'> <img src={img7.src} alt="figma" className={styles.figma} /></Link> 
                 </div>
                 <div className={styles.imgg2}>
-                  <img src={img6.src} alt="java" className={styles.java} />
+                 <Link href='/course?type=java'> <img src={img6.src} alt="java" className={styles.java} /></Link>
                 </div></div>
 
 

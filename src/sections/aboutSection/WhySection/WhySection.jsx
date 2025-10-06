@@ -31,7 +31,7 @@ export const WhyUsSection = () => {
                 <div className={styles.HeadingContainer}>
                     <h2 className={styles.Heading}>Why Us?</h2>
                     <p className={styles.Subheading}>
-                        We believe in the power of continuous self-improvement, <br />
+                        We believe in the power of continuous self-improvement,
                         offering innovative programs for digital readiness and positive learning experiences..
                     </p>
                 </div>

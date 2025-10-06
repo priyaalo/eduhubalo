@@ -25,9 +25,9 @@ export const TeamSection = () => {
                     </div>
                     <div className={styles.teamMember}>
                         <div className={styles.imageWrapper}>
-                            <img src={esaiImage.src} alt="IsaiKumar" />
+                            <img src={esaiImage.src} alt="EsaiKumar" />
                         </div>
-                        <h3>IsaiKumar</h3>
+                        <h3>EsaiKumar</h3>
                         <p className={styles.title}>Founder & CEO</p>
                         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={24} color="#0077B5" />

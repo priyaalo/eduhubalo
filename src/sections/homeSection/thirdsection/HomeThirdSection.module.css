@@ -34,7 +34,7 @@
   padding-bottom: 80px;
 }
 
-.fu p::after {
+/* .fu p::after {
   content: '';
   position: absolute;
   left: 30px;
@@ -48,6 +48,68 @@
 
 .card1:hover p::after {
   width: 25%;
+} */
+ .fu p {
+  position: relative;
+  width: max-content;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.default,
+.hover {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  transition:  transform 0.3s ease;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.default {
+  opacity: 1;
+  transform: translatex(0%);
+}
+
+.hover {
+  opacity: 0;
+  transform: translatex(0);
+}
+
+.card1:hover .link .default {
+  opacity: 0;
+  /* transform: translatex(100%); */
+}
+
+ .card1:hover .link .hover {
+  opacity: 1;
+  /* transform: translatex(0); */
+}
+
+.highlight {
+  color: #69BDE6; /* your blue color */
+}
+
+.fu p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 2px;
+  background: #69BDE6;
+  /* transform: scaleX(0); */
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+.card1:hover p::after {
+  /* transform: scaleX(1); */
+  width: 100%;
 }
 
 .fu {
@@ -59,8 +121,7 @@
 
 .content {
   padding: 15px 30px 30px 30px;
-}.content1 {
-  padding: 15px 30px 30px 30px;
+  overflow: hidden;
 }
 
 .card1 {
@@ -69,7 +130,6 @@
   border-radius: 16px;
   overflow: hidden;
   width: 31.5%;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: box-shadow 0.3s ease;
@@ -80,7 +140,7 @@
 }
 
 .card1:hover .courses img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .courses {
@@ -256,7 +316,7 @@
 
 @media (max-width: 480px) {
   .card1 {
-    max-width: 90%;
+    /* max-width: 90%; */
   }
 
   .head h1 {
@@ -266,6 +326,12 @@
   .head p {
     font-size: 15px;
   }
+    .card{
+    padding: 0px 0px;
+  }
+  .content,.fu{
+  padding: 10px;
+}
 }
 
 @media (max-width: 320px) {
@@ -303,10 +369,15 @@
   .content1 p {
     font-size: 13px;
   }
-
+.content,.fu{
+  padding: 10px;
+}
   .more {
     width: 150px;
     height: 45px;
     font-size: 14px;
+  }
+  .card{
+    padding: 0px 0px;
   }
 }

@@ -1,258 +1,170 @@
-
 .seventh {
-  background-color: #EFFBFF;
-  padding: 6rem 2rem;
+  background-color: #f9fafc;
+  padding: 60px 0;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
-/* .homePageCarousal{
-  width:100%;
-} */
-
-.bottom {
-  display: flex;
-  gap: 25px;
-  flex-wrap: nowrap;   
-  animation: HomeScroll 30s linear infinite;
-}
-
-
-.top {
-  color: #2B2B2B;
-  max-width: 800px;
-  margin: 0 auto 3rem;
-}
-.image2 {
-  max-width: 150px;   
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
 
 .top h2 {
-  font-size: 2.2rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
 }
 
 .top p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto 40px;
 }
 
-/* .homePageCarousalContainer {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-  padding: 25px 0px;
-  animation: HomeScroll 10s linear infinite;
-} */
 
-.homePageCarousalSplit {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
- 
-  width:400px;
-  gap: 10px;
-
- 
+.homePageCarousal {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
   
 }
 
-
-/* @keyframes HomeScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-224px * 24));
-  }
-} */
-
-
-
-
-.homePageCarousalSplitDivs {
-  flex: 0 0 auto;
-  width: 300px;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow: hidden;        
-  flex-direction: column;
-  padding: 0;              
-}
-/* 
-.imageContainer {
-  width: 350px;
-  height: 250px;          
-  overflow: hidden;
-} */
-
-.alumniImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;        
-  display: block;
-  margin: 0;               
-}
-
-.cardContent {
-  padding: 1rem;           
-}
-.imageContainer {
-  height: 480px;
-  width:350px;
-  overflow: hidden;
-}
-
-.alumniImage {
-  width: 100%;
-  height: 100%;
-
-}
-
-.cardContent {
-  padding: 1.2rem;
-}
-
-.nameRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 0.5rem;
-}
-
-.nameRow h5 {
-  font-size: 1.25rem;
-  font-weight: 500;
-
-}
-
-.logo {
-  height: 20px;
-  width: auto;
-}
-
-.careerGap {
-  color: #6BA4ED;
-  font-size: 0.9rem; 
-  text-align: left;
-}
-
-.role {
-  color: #6BA4ED;
-  font-size: 0.9rem;
-  padding-top: 20px;
-  text-align: left;
-}
-.image2{
-  height:1%;
-  width:1%;
-}
-.homePageCarousal {
-  width: 100%;
-}
 
 .track {
   display: flex;
-  gap:40px;
-  animation: scrollLoop 20s linear infinite;
-  flex-wrap: nowrap;
-  
+  gap: 2rem;
+  animation: scroll 200s linear infinite;
+  width: max-content;
 }
 
-.homePageCarousalSplit {
-  min-width: 350px; 
-  margin-right: 0;
-  
-  background-color: white;
-}
-
-@keyframes scrollLoop {
+@keyframes scroll {
   0% {
-    transform: translateX(-50%);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-   
-    transform: translateX(0%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 
-
-
-@media (max-width: 1024px) {
-  .bottom {
-    gap: 1.5rem;
-  }
-  .card{
-    width:100%;
-  }
+.homePageCarousalSplit {
+  /* ALIGNMENT FIXES: Added background, border-radius, and default shadow for card structure */
+  width: 275px;
+  background-color: #ffffff; /* Gives the card a background */
+  border-radius: 16px; /* Applies rounded corners to the whole card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle default shadow */
+  overflow: hidden; /* Ensures contents respect the border-radius */
+  
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Ensure content flows vertically inside the card */
+  display: flex;
+  flex-direction: column;
 }
+
+.homePageCarousalSplit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Slightly stronger hover shadow */
+}
+
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Removed border-radius here as it's on the image, but added overflow:hidden to card above */
+}
+
+.alumniImage {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;  
+  border-radius: 16px 16px 0 0;
+}
+
+
+.cardContent {
+  /* ALIGNMENT FIXES: Increased bottom padding for better spacing */
+  padding: 15px 10px 20px; /* Increased bottom padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures text and logo are horizontally centered */
+  flex-grow: 1; /* Allows content area to fill vertical space if card heights vary */
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.companyLogo {
+  width: 25px;
+  height: auto;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
 
 @media (max-width: 768px) {
   .seventh {
-    padding: 4rem 1.5rem;
+    padding: 40px 0;
   }
-  
-  .bottom {
-    flex-direction: column;
-    align-items: center;
+
+
+  .track {
+    gap: 1.5rem;
+    animation-duration: 150s;
   }
-  
-  .card {
-    width: 100%;
-    max-width: 450px;
+
+  .homePageCarousalSplit {
+    width: 280px;
+  }
+
+  .alumniImage {
+    height: 270px;
   }
 }
+
 
 @media (max-width: 480px) {
-  .seventh {
-    padding: 3rem 1rem;
-  }
-  
   .top h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
-  
-.card {
-    width: 95%;      
-    max-width: 300px;
+  .top p {
+    font-size: 0.9rem;
+    padding: 0 20px;
   }
 
-  
-  .top p {
+
+  .track {
+    gap: 1rem;
+    animation-duration: 100s;
+  }
+
+  .homePageCarousalSplit {
+    width: 280px;
+  }
+
+  .alumniImage {
+    height: 200px;
+  }
+
+  .name {
     font-size: 1rem;
   }
-  
-  .enrollButton {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-  }
-}
-@media (max-width: 320px) {
-  .seventh {
-    padding: 3rem 1rem;
-  }
-  .card {
-    width: 95%;        
-  }
-  
-  .top h2 {
-    font-size: 1.8rem;
-  }
-  
-  .top p {
-    font-size: 1rem;
-  }
-  
-  .enrollButton {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
+
+  .role {
+    font-size: 0.9rem;
   }
 }

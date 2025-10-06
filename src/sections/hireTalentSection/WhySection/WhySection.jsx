@@ -1,9 +1,7 @@
-"use client";
-import React from "react";
-import styles from './WhySection.module.css'
+// import React from "react";
+import styles from "./WhySection.module.css";
 
-const WhySection=()=>{
-
+const WhySection = ({ openModal }) => {
   const features = [
     { id: "01", title: "Learn at Your Convenience", desc: "Choose flexible class timings with options for both Morning and Evening sessions." },
     { id: "02", title: "Training from Industry Experts", desc: "Gain knowledge directly from professionals with rich industry experience." },
@@ -17,9 +15,7 @@ const WhySection=()=>{
     <section className={styles.why_section}>
       <div className={styles.container}>
         <h2 className={styles.title}>Why ALO Educational Hub?</h2>
-        <p className={styles.subtitle}>
-          From Humble Beginnings to Leading Software Training Innovator
-        </p>
+        <p className={styles.subtitle}>From Humble Beginnings to Leading Software Training Innovator</p>
 
         <div className={styles.grid}>
           {features.map((feature) => (
@@ -29,14 +25,15 @@ const WhySection=()=>{
               <p>{feature.desc}</p>
             </div>
           ))}
-          
         </div>
+
         <div className={styles.para}>
-            <p>Get in Touch Today to Learn More About Our Services and How We Can Assist You in Finding the Best Candidates for Your Team!</p>
-            <button className={styles.button}>HireTalent</button>
-          </div>
+          <p>Get in Touch Today to Learn More About Our Services and How We Can Assist You in Finding the Best Candidates for Your Team!</p>
+          <button className={styles.button} onClick={openModal}>Hire Talent</button>
+        </div>
       </div>
     </section>
   );
-}
-export default WhySection
+};
+
+export default WhySection;

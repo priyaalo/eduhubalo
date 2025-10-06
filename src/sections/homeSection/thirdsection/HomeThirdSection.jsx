@@ -10,6 +10,7 @@ import image7 from '@/assets/hero/g1.png'
 import image8 from '@/assets/hero/b1.png'
 import image9 from '@/assets/hero/b2.png'
 import image10 from '@/assets/hero/Frontend.png'
+import Link from 'next/link'
 
 
 
@@ -22,61 +23,80 @@ const HomeThirdSection = () => {
       name: "UI/UX Design",
       duration: "3 Months",
       title: "Certification Course in Web Development & UI/UX Design",
-      image: image2.src
+      image: image2.src,
+      link: '/course?type=uiux'
     },
     {
       name: "Digital Marketing",
       duration: "3 Months",
       title: "Certification Course in Digital Marketing",
-      image: image3.src
+      image: image3.src,
+      link: '/course?type=digital'
+
     },
     {
       name: "FrontEnd",
       duration: "3 Months",
       title: "Certification Course in FrontEnd Development",
-      image: image10.src
+      image: image10.src,
+      link: '/course?type=frontenddev'
+
     },
     {
       name: "MobileApp Development",
       duration: "3 Months",
-      title: "Certification Course in MobileApp Development",
-      image: image5.src
+      title: "Certification Course in MobileApp Developmentee",
+      image: image5.src,
+      link: '/course?type=mobileapp'
+
     },
     {
       name: "Tally",
       duration: "3 Months",
       title: "Certification Course in Tally",
-      image: image1.src
+      image: image1.src,
+      link: '/course?type=tally'
+
     },
     {
-      name: "python",
+      name: "Python",
       duration: "3 Months",
       title: "Certification Course in Python",
-      image: image4.src
+      image: image4.src,
+      link: '/course?type=python'
+
     },
     {
       name: "HRM",
       duration: "3 Months",
       title: "Certification Course in Human Resource Development",
-      image: image6.src
+      image: image6.src,
+      link: '/course?type=hrm'
+
     },
     {
-      name: "Web Development",
-      duration: "3 Months",
-      title: "Certification Course in Web Development",
-      image: image2.src
+      name: "Full Stack Development",
+      duration: "6 Months",
+      title: "Certification Course in Full Stack Development",
+      image: image2.src,
+      link: '/course?type=fullstackdev'
+
     },
     {
-      name: "UI/UX Design",
+      name: "Data Analyst",
       duration: "3 Months",
-      title: "Certification Course in Web Development & UI/UX Design",
-      image: image1.src
+      title: "Certification Course in Data Analyst",
+      image: image1.src,
+      link: '/course?type=analytics'
+
     },
     {
       name: "BackEnd Development",
       duration: "3 Months",
-      title: "Certification Course in Web Development & UI/UX Design",
-      image: image2.src
+      title: "Certification Course in BackEnd Development",
+      image: image2.src,
+      link: '/course?type=backenddev'
+
     }
   ]
 
@@ -114,33 +134,21 @@ const HomeThirdSection = () => {
                     <h6>Join over <span className={styles.highlight}>200+ </span>students</h6>
                   </div>
                 </div>
-                <a className={styles.link}>Learn More →</a>
+                <p className={styles.link}>
+                  <span style={{ color: 'black' }} className={styles.default}>Learn More →</span>
+                  <Link href={course.link} style={{color:'black'}}>  <span className={styles.hover}>Explore <span className={styles.highlight}>→</span></span></Link>
+                </p>
               </div>
-               <div className={styles.card2}>
+              <div className={styles.card2}>
 
-                <div className={styles.content1}>
 
-                  <h4>3 Months</h4>
-                  <h3>Certification Course in <br />Web Development & UI/UX Design </h3>
-                  <div className={styles.border}>
-                    <div className={styles.small}>
-                      <img src={image7.src} rel="girl" className={styles.small1} alt="im7"></img>
-                      <img src={image8.src} rel="tshirt" className={styles.small2} alt="im8"></img>
-                      <img src={image9.src} rel="shirt" className={styles.small3} alt="im9"></img>
-                    </div>
-                   <div className={styles.join}>
-                     <h6>Join over <span className={styles.highlight}>200+ </span>students</h6>
-                  </div>
-                 </div>
-                   <a className={styles.link}>Explore <span className={styles.highlight}> →</span></a>
-                 </div> 
-             </div> 
+              </div>
             </div>
 
           </div>
         ))}
 
-      
+
       </div>
       {visibleCount < courses.length && (
         <div className={styles.button}>
