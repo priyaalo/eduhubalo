@@ -14,7 +14,7 @@ const ContactBannerSection = () => {
 
                     </h1>
                     <p className={styles.heroText}>
-                       Interested in Discussing your IT Training Vision? We're here to Assist you.
+                       Interested in Discussing your IT Training Vision? WeWe&apos;re here to Assist you.
 
                     </p>
                     <span className={styles.bottomBorder}></span>
