@@ -109,6 +109,7 @@ const HomeFormSection = () => {
             <div className={styles.phoneInput1}>
               <PhoneInput
                 country="in"
+                defaultCountry="in"
                 value={formData.phone}
                 onChange={(phone) => {
                   setFormData({ ...formData, phone });

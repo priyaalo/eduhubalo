@@ -104,7 +104,7 @@ const HireTalentModal = ({ isOpen, closeModal }) => {
         });
 
         if (res.status === 200) {
-          toast.success("Form Submitted Successfully!");
+          toast.success("Hire request Submitted Successfully!");
           handleClose();
         }
       } catch (error) {
@@ -119,6 +119,7 @@ const HireTalentModal = ({ isOpen, closeModal }) => {
       {/* <ToastContainer/> */}
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
+         <div className={styles.scrollwrapper}>
         <button className={styles.closeButton} onClick={handleClose}>
           ✕
         </button>
@@ -204,12 +205,14 @@ const HireTalentModal = ({ isOpen, closeModal }) => {
           {errors.requirement && <p className={styles.error}>{errors.requirement}</p>}
 
           <button type="submit" className={styles.submitButton}>
-            Submit
+          Hire Me
           </button>
         </form>
-      
+
       </div>
     </div>
+   
+          </div>
     </>
   );
 };

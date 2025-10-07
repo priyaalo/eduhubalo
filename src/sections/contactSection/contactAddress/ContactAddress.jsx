@@ -38,7 +38,7 @@ const ContactAddress = () => {
                     </div>
                     <div>
                         <div >
-                            <p className={styles.heading}>Location</p>
+                            <p className={styles.heading}>Locationdd</p>
                         </div>
                         <div className={styles.subAddres}>
                             <div className={styles.subaddress}>

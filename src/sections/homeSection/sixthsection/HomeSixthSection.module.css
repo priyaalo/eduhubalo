@@ -48,7 +48,7 @@
 }
 
 .homePageCarousalSplit img {
-  width: 80px;
+  width: 100px;
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
@@ -85,7 +85,7 @@
 @media (max-width: 768px) {
   .homePageCarousalContainer {
     gap: 40px;
-    animation-duration: 25s;
+    animation-duration: 20s;
   }
   .homePageCarousalSplit img {
     width: 60px;

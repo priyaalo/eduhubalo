@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { postFooterRequest } from '@/api/serviceapi';
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+ import "react-toastify/dist/ReactToastify.css";
 // import { useRouter } from "next/router";
 
 const Footer = () => {
@@ -19,14 +19,14 @@ const Footer = () => {
   const router = useRouter();
 
   const handleEnrollClick = () => {
-    // If already on home page, just scroll
+    
     if (router.pathname === "/home" || router.pathname === "/") {
       const element = document.getElementById("contact-form");
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // Navigate to home with hash
+ 
       router.push("/home#contact-form");
     }
   };
@@ -101,7 +101,7 @@ const Footer = () => {
                 <Link href='/home'> <img src={alo.src} alt="hublogo" /></Link>
               </div>
               <p>
-              <Link style={{ textDecoration: 'none' , color:'#52525b'}} target='_blank' href='https://www.google.com/maps/dir//ALO+Educational+Hub+Chunkankadai+Nagercoil,+Tamil+Nadu+629003/@8.1990139,77.3830623,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6969a57d008e757d:0xf708985f3b380092!2m2!1d77.3830623!2d8.1990139?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D'>  2/2, Chunkankadai, <br />Nagercoil, Tamil Nadu, <br /> 629003</Link>
+              <a style={{ textDecoration: 'none' , color:'#52525b'}} target='_blank' href='https://www.google.com/maps/dir/ALO+Educational+Hub+Chunkankadai+Nagercoil,+Tamil+Nadu+629003/@8.1990139,77.3830623,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6969a57d008e757d:0xf708985f3b380092!2m2!1d77.3830623!2d8.1990139?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D'>  2/2, Chunkankadai, <br />Nagercoil, Tamil Nadu, <br /> 629003</a>
               </p>
               <div className={styles.icon}>
                 <FaTwitter />

@@ -45,7 +45,9 @@
   background-color: white;
   color: #69bde6;
 }
-
+.submit:hover{
+  background-color: #0f415e;
+}
 .down {
   background-color: white;
   max-width: 100%;
