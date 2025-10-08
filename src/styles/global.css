@@ -20,11 +20,19 @@ img {
     -webkit-user-drag: none;
     draggable: none;
 }
-
+.ant-drawer .ant-drawer-content{
+    width:90% !important;
+    margin-left: auto !important;
+}
 body::-webkit-scrollbar {
     display: none;
 }
-
+.ant-drawer .ant-drawer-body{
+    padding: 2px 10px !important;
+}
+.ant-drawer .ant-drawer-header{
+    border-bottom: none !important;
+}
 .react-tel-input .flag-dropdown {
     position: absolute;
     top: 0;

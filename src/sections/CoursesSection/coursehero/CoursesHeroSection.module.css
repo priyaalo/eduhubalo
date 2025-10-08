@@ -357,20 +357,23 @@
    .up h1 {
     font-size: 18px;
   }
-    .down{
-      display: flex;
-      flex-direction: column;
-       gap:30px;
-       
-
-    }
-    
-    .card{
-      gap:20px;
-      width:60%;
-      position: none;
-      top: 30px;
-    }
+  .down {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+.heroContent h1 {
+  font-size: 20px;
+}
+.heroText{
+  font-size: 14px !important;
+}
+  .card {
+    gap: 20px;
+    width: 60%;
+    position: none;
+    top: 30px;
+  }
 }
 
   
